@@ -4,18 +4,18 @@ type ParamsType = {
     params: {
         wname: string;
     }
-}
+};
 
 export function generateStaticParams() {
   return [{ wname: 'michael' }]
-}
+};
 
 
-const ProjectDetails = ({ params }: ParamsType) => {
+const WikiPage = ({ params }: ParamsType) => {
     return ( 
         <div>
             {params.wname}
         </div>
-    )
-}
-export default ProjectDetails;
+    );
+};
+export default WikiPage;
