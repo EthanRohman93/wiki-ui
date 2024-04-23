@@ -2,24 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+* TODO:
+*   put initial formats for pages
+*   put initial colors for pages
+*   put font sizes for section heading and such
+*/
+
 :root {
   /* Light Mode Colors */
-  --foreground-rgb: 35, 40, 45; /* Darker grey halfway to black */
-  --background-start-rgb: 250, 240, 220; /* Lighter tan, closer to white */
-  --background-end-rgb: 250, 240, 220; /* Lighter tan, consistent for gradient end */
-  --border-color-rgb: 172, 216, 230; /* Pastel blue for border */
-  --shadow-color: rgba(0, 0, 0, 0.1);
+    /* Home Page Light Mode */
+      --foreground-rgb: 35, 40, 45;
+      --background-rgb: 250, 240, 220;
+      --border-color-rgb: 172, 216, 230;
 
+    /* Wiki Page Light Mode */
+      --foreground-rgb: 35, 40, 45;
+      --background-rgb: 250, 240, 220;
+      --border-color-rgb: 172, 216, 230;
+      
+      /* Michael Jordan Wiki Page Light Mode */
+            --foreground-rgb: 35, 40, 45;
+            --background-rgb: 250, 240, 220;
+            --border-color-rgb: 172, 216, 230;
+
+    /* Enhanced Page Light Mode */
+      --foreground-rgb: 35, 40, 45;
+      --background-rgb: 250, 240, 220;
+      --border-color-rgb: 172, 216, 230;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark Mode Colors */
-    --foreground-rgb: 250, 240, 220; /* Light tan for text, closer to white */
-    --background-start-rgb: 35, 40, 45; /* Darker grey for background */
-    --background-end-rgb: 35, 40, 45; /* Darker grey for background */
-    --border-color-rgb: 230, 230, 250; /* Lighter border color for dark mode */
-    --shadow-color: rgba(255, 255, 255, 0.1);
+      /* Dark Mode Colors */
+        /* Home Page Dark Mode */
+          --foreground-rgb: 35, 40, 45;
+          --background-rgb: 250, 240, 220;
+          --border-color-rgb: 172, 216, 230;
+
+        /* Wiki Page Dark Mode */
+          --foreground-rgb: 35, 40, 45;
+          --background-rgb: 250, 240, 220;
+          --border-color-rgb: 172, 216, 230;
+
+          /* Michael Jordan Wiki Page Dark Mode */
+            --foreground-rgb: 35, 40, 45;
+            --background-rgb: 250, 240, 220;
+            --border-color-rgb: 172, 216, 230;
+
+
+        /* Enhanced Page Dark Mode */
+          --foreground-rgb: 35, 40, 45;
+          --background-rgb: 250, 240, 220;
+          --border-color-rgb: 172, 216, 230;
   }
 }
 
