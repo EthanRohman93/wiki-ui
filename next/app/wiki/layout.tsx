@@ -7,9 +7,9 @@ type WikiLayoutProps = {
 
 const WikiLayout: React.FC<WikiLayoutProps> = ({ children }) => {
   return (
-    <div className={styles.wikiContainer}>
+    <div className={styles.colorScheme}>
       <main className={styles.wikiContent}>
-        {children}
+ p       {children}
       </main>
     </div>
   );

@@ -8,65 +8,61 @@
 *   put initial colors for pages
 *   put font sizes for section heading and such
 */
+/* globals.css */
 
 :root {
-  /* Light Mode Colors */
-    /* Home Page Light Mode */
-      --foreground-rgb: 35, 40, 45;
-      --background-rgb: 250, 240, 220;
-      --border-color-rgb: 172, 216, 230;
+  /* Home Page Light Mode */
+  --home-foreground-rgb: 35, 40, 45;
+  --home-background-rgb: 250, 240, 220;
+  --home-border-color-rgb: 172, 216, 230;
 
-    /* Wiki Page Light Mode */
-      --foreground-rgb: 35, 40, 45;
-      --background-rgb: 250, 240, 220;
-      --border-color-rgb: 172, 216, 230;
-      
-      /* Michael Jordan Wiki Page Light Mode */
-            --foreground-rgb: 35, 40, 45;
-            --background-rgb: 250, 240, 220;
-            --border-color-rgb: 172, 216, 230;
+  /* Wiki Page Light Mode */
+  --wiki-foreground-rgb: 0, 0, 0;
+  --wiki-background-rgb: 255, 255, 255;
+  --wiki-border-color-rgb: 192, 192, 192;
+  
+  /* Michael Jordan Wiki Page Light Mode */
+  --mj-wiki-foreground-rgb: 0, 0, 0;
+  --mj-wiki-background-rgb: 255, 255, 255;
+  --mj-wiki-border-color-rgb: 255, 0, 0;
 
-    /* Enhanced Page Light Mode */
-      --foreground-rgb: 35, 40, 45;
-      --background-rgb: 250, 240, 220;
-      --border-color-rgb: 172, 216, 230;
+  /* Enhanced Page Light Mode */
+  --enhanced-foreground-rgb: 44, 62, 80;
+  --enhanced-background-rgb: 236, 240, 241;
+  --enhanced-border-color-rgb: 52, 73, 94;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-      /* Dark Mode Colors */
-        /* Home Page Dark Mode */
-          --foreground-rgb: 35, 40, 45;
-          --background-rgb: 250, 240, 220;
-          --border-color-rgb: 172, 216, 230;
+    /* Home Page Dark Mode */
+    --home-foreground-rgb: 243, 156, 18;
+    --home-background-rgb: 23, 23, 23;
+    --home-border-color-rgb: 35, 40, 45;
 
-        /* Wiki Page Dark Mode */
-          --foreground-rgb: 35, 40, 45;
-          --background-rgb: 250, 240, 220;
-          --border-color-rgb: 172, 216, 230;
+    /* Wiki Page Dark Mode */
+    --wiki-foreground-rgb: 255, 255, 255;
+    --wiki-background-rgb: 28, 28, 28;
+    --wiki-border-color-rgb: 128, 128, 128;
 
-          /* Michael Jordan Wiki Page Dark Mode */
-            --foreground-rgb: 35, 40, 45;
-            --background-rgb: 250, 240, 220;
-            --border-color-rgb: 172, 216, 230;
+    /* Michael Jordan Wiki Page Dark Mode */
+    --mj-wiki-foreground-rgb: 255, 255, 255;
+    --mj-wiki-background-rgb: 0, 0, 0;
+    --mj-wiki-border-color-rgb: 139, 0, 0;
 
-
-        /* Enhanced Page Dark Mode */
-          --foreground-rgb: 35, 40, 45;
-          --background-rgb: 250, 240, 220;
-          --border-color-rgb: 172, 216, 230;
+    /* Enhanced Page Dark Mode */
+    --enhanced-foreground-rgb: 236, 240, 241;
+    --enhanced-background-rgb: 44, 62, 80;
+    --enhanced-border-color-rgb: 22, 31, 40;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  padding-top: env(safe-area-inset-top);
+html, body {
+  height: 100%;
+}
+
+.home-color-scheme {
+  color: rgb(var(--home-foreground-rgb));
+  background: rgb(var(--home-background-rgb));
 }
 
 @media (max-width: 600px) {

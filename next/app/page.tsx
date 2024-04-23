@@ -1,11 +1,11 @@
 import React from 'react';
-import Layout from './layout';
+import RootLayout from './layout';
 import Link from 'next/link';
 
 const MainPage = () => {
   return (
-    <Layout>
-      <div className="safe-top rounded-border p-4">
+    <RootLayout>
+      <div className="home-color-scheme">
         <h1 className="text-2xl font-bold mb-4">Welcome to Our User Experience Research</h1>
         <p className="mb-4">
           Thank you for visiting! We are excited to have you participate in our study,
@@ -39,7 +39,7 @@ const MainPage = () => {
           please visit my portfolio http://ethanrohman.com.
         </p>
       </div>
-    </Layout>
+    </RootLayout>
   );
 };
 
