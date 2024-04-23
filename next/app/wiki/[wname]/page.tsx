@@ -1,5 +1,4 @@
 import React from 'react';
-import ProjectInfo from "../../components/project/ProjectInfo"
 
 type ParamsType = {
     params: {
@@ -8,14 +7,14 @@ type ParamsType = {
 }
 
 export function generateStaticParams() {
-  return [{ wname: 'answer-bot' }, { pname: 'capstone' }]
+  return [{ wname: 'michael' }]
 }
 
 
 const ProjectDetails = ({ params }: ParamsType) => {
     return ( 
         <div>
-            <ProjectInfo pname={params.pname} />
+            {params.wname}
         </div>
     )
 }

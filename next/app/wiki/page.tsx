@@ -1,8 +1,12 @@
+'use client'
+import React from 'react';
 
-export default function Wiki() {
-    return ( 
-        <main>
-            <h1>Which topic would you like to learn about</h1>
-        </main>
-    )
-}
+const WikiPage = () => {
+  return (
+      <div className="safe-top rounded-border p-4">
+        <h1 className="mb-4">Wiki Landing Page</h1>
+      </div>
+  );
+};
+
+export default WikiPage;
