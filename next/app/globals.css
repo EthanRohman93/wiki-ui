@@ -7,6 +7,38 @@
 *   put initial formats for pages
 *   put initial colors for pages
 *   put font sizes for section heading and such
+*
+*   colors:
+*     home:
+*       space cadet 22223B
+*       laverder blush FFEEF@
+*       gray 808080
+*       tea green C3F3C0
+*       vanilla ECE4B7
+*     michael:
+*       white FFFFFF
+*       bulls red CE1141
+*       black 000000
+*       jet 333234
+*       babt blue 89CFF0a
+*     swift:
+*       
+*     wiki:
+*       white FFFFFF
+*       black 000000
+*       outer space 474A48
+*       link blue 0000FF
+*     enhanced:
+*       outer space 474A48
+*       space cadet 22223B
+*       vanilla ECE487
+*       ash gray BCD0C7
+*     base-enhanced:
+*       outer space 474A48
+*       ash gray BCD0C7
+*       dodger blue 0197F6
+*       vanilla ECE487
+*
 */
 /* globals.css */
 
@@ -106,7 +138,7 @@ html, body {
 
 .michael-color-scheme {
   height: 100%;
-  color: rgb(var(--mj-wiki-foreground-rgb));
+  color: #CE1141;
   background: rgb(var(--mj-wiki-background-rgb));
 }
 
