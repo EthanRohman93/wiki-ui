@@ -2,6 +2,19 @@ import React from 'react';
 import RootLayout from './layout';
 import Link from 'next/link';
 
+/*
+ * TODO
+ *   add username creation and suggestion
+ *   add formatting
+ *   add color scheme
+ *   track username somehow
+ *   forward to random wiki or enhanced home pages
+ *   make home page that allows for people to choose an experience and or topic
+ *   make nav bar with jump and normal links (search for content too)
+ *   right side pannel that has abbreviated version with section headings
+ *   headings style 
+ * */
+
 const MainPage = () => {
   return (
     <RootLayout>

@@ -7,13 +7,14 @@ type ParamsType = {
 };
 
 export function generateStaticParams() {
-  return [{ wname: 'michael' }]
+  return [{ ename: 'michael' }]
 };
 
 
 const EnhancedPage = ({ params }: ParamsType) => {
+    const colorScheme = `${params.ename}-color-scheme`
     return ( 
-        <div>
+        <div className={colorScheme}>
             {params.ename}
         </div>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import WikiLayout from '../layout';
 
 type ParamsType = {
     params: {
@@ -14,11 +13,9 @@ export function generateStaticParams() {
 
 const WikiPage = ({ params }: ParamsType) => {
     return (
-        <WikiLayout>
-            <div>
-                {params.wname}
-            </div>
-        </WikiLayout>
+        <div className='wiki-color-scheme'>
+            {params.wname}
+        </div>
     );
 };
 export default WikiPage;

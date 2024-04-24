@@ -66,6 +66,24 @@ html, body {
   background: rgb(var(--home-background-rgb));
 }
 
+.wiki-color-scheme {
+  height: 100%;
+  color: rgb(var(--wiki-foreground-rgb));
+  background: rgb(var(--wiki-background-rgb));
+}
+
+.enhanced-color-scheme {
+  height: 100%;
+  color: rgb(var(--enhanced-foreground-rgb));
+  background: rgb(var(--enhanced-background-rgb));
+}
+
+.michael-color-scheme {
+  height: 100%;
+  color: rgb(var(--mj-wiki-foreground-rgb));
+  background: rgb(var(--mj-wiki-background-rgb));
+}
+
 @media (max-width: 600px) {
   .safe-top {
     flex-direction: column;

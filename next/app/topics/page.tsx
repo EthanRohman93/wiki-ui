@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const TopicsPage = () => {
   return (
-      <div className="safe-top rounded-border p-4">
+    <div className='home-color-scheme'>
         <h1 className="mb-4">Topics Page</h1>
         <ol>
             <li>
@@ -18,7 +18,7 @@ const TopicsPage = () => {
                 </Link>
             </li>
         </ol>
-      </div>
+    </div>
   );
 };
 
