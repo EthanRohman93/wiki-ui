@@ -60,11 +60,27 @@ html, body {
   height: 100%;
 }
 
+
+/*
+* Home Styles
+*/
+
 .home-color-scheme {
   height: 100%;
   color: rgb(var(--home-foreground-rgb));
   background: rgb(var(--home-background-rgb));
 }
+
+.home-border-style {
+  border: 4px solid rgb(var(--home-border-color-rgb));
+  padding: 10px;
+  margin: 4px;
+}
+
+
+/*
+* Wiki Styles
+*/
 
 .wiki-color-scheme {
   height: 100%;
@@ -72,17 +88,40 @@ html, body {
   background: rgb(var(--wiki-background-rgb));
 }
 
+
+/*
+* Enhanced Styles
+*/
+
 .enhanced-color-scheme {
   height: 100%;
   color: rgb(var(--enhanced-foreground-rgb));
   background: rgb(var(--enhanced-background-rgb));
 }
 
+
+/*
+* Michael Jordan Styles
+*/
+
 .michael-color-scheme {
   height: 100%;
   color: rgb(var(--mj-wiki-foreground-rgb));
   background: rgb(var(--mj-wiki-background-rgb));
 }
+
+
+/*
+* Taylor Swift Styles
+*/
+
+.swift-color-scheme {
+  height: 100%;
+  color: rgb(var(--mj-wiki-foreground-rgb));
+  background: rgb(var(--mj-wiki-background-rgb));
+}
+
+
 
 @media (max-width: 600px) {
   .safe-top {
