@@ -2,6 +2,7 @@ import React from 'react';
 import RootLayout from './layout';
 import Link from 'next/link';
 import InputField from '@/components/login/InputField';
+import { cookies } from 'next/headers';
 
 /*
  * TODO
@@ -18,7 +19,8 @@ const MainPage = () => {
   return (
     <RootLayout>
       <div className="home-color-scheme flex items-center justify-center h-screen">
-        <div className='flex flex-col items-center justify-center w-full max-w-4xl p-4 home-border-style'>
+        <div className='flex flex-col items-center justify-center w-full
+                    max-w-4xl p-4 home-border-style rounded-xl'>
             <h1 className="text-2xl font-bold mb-4">Welcome to Our User Experience Research</h1>
             <p className="mb-4">
               Thank you for visiting! We are excited to have you participate in our study,
@@ -37,8 +39,12 @@ const MainPage = () => {
               to help improve future user experiences. Rest assured, no personal data
               beyond your site usage will be collected.
             </p>
-            <div className="home-border-style">
-              <InputField id='login' label='Username: ' placeholder='ExamplePassword' type='text'/>
+            <div className="home-border-style rounded-xl">
+              <InputField id='login' 
+                    label='Username: ' 
+                    placeholder='ExamplePassword'
+                    type='text' 
+                    borderStyle='rounded-xl'/>
             </div>
             <div className="mb-4">
               <Link className="hover:font-bold hover:text-current" href="/topics/">
