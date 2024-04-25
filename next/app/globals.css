@@ -11,7 +11,7 @@
 *   colors:
 *     home:
 *       space cadet 22223B
-*       laverder blush FFEEF@
+*       laverder blush FFEEF
 *       gray 808080
 *       tea green C3F3C0
 *       vanilla ECE4B7
@@ -20,9 +20,7 @@
 *       bulls red CE1141
 *       black 000000
 *       jet 333234
-*       babt blue 89CFF0a
-*     swift:
-*       
+*       baby blue 89CFF0a
 *     wiki:
 *       white FFFFFF
 *       black 000000
@@ -44,47 +42,73 @@
 
 :root {
   /* Home Page Light Mode */
-  --home-foreground-rgb: 35, 40, 45;
-  --home-background-rgb: 250, 240, 220;
-  --home-border-color-rgb: 172, 216, 230;
+  --home-foreground: #22223B;
+  --home-background: #ECE4B7;
+  --home-border-color: #808080;
+  --home-secondary-color: #FFEEF2;
+  --home-tertiary-color: #C3F3C0;
 
   /* Wiki Page Light Mode */
-  --wiki-foreground-rgb: 0, 0, 0;
-  --wiki-background-rgb: 255, 255, 255;
-  --wiki-border-color-rgb: 192, 192, 192;
+  --wiki-foreground: #000000;
+  --wiki-background: #FFFFFF;
+  --wiki-border-color: #474A48;
+  --wiki-link-color: #0000FF;
   
   /* Michael Jordan Wiki Page Light Mode */
-  --mj-wiki-foreground-rgb: 0, 0, 0;
-  --mj-wiki-background-rgb: 255, 255, 255;
-  --mj-wiki-border-color-rgb: 255, 0, 0;
+  --michael-foreground: #FFFFFF;
+  --michael-background: #000000;
+  --michael-border-color: #CE1141;
+  --michael-secondary-color: #333234;
+  --michael-tertiary-color: #89CFF0A;
 
   /* Enhanced Page Light Mode */
-  --enhanced-foreground-rgb: 44, 62, 80;
-  --enhanced-background-rgb: 236, 240, 241;
-  --enhanced-border-color-rgb: 52, 73, 94;
+  --enhanced-foreground: #ECE487;
+  --enhanced-background: #22223B;
+  --enhanced-border-color: #474A48;
+  --enhanced-secondary-color: #BCD0C7;
+
+  /* Enhanced Page Light Mode */
+  --base-foreground: #ECE487;
+  --base-background: #22223B;
+  --base-border-color: #474A48;
+  --base-secondary-color: #333234;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* Home Page Dark Mode */
-    --home-foreground-rgb: 243, 156, 18;
-    --home-background-rgb: 23, 23, 23;
-    --home-border-color-rgb: 35, 40, 45;
+    --home-foreground: #ECE4B7;
+    --home-background: #22223B;
+    --home-border-color: #808080;
+    --home-secondary-color: #FFEEF2;
+    --home-tertiary-color: #C3F3C0;
 
     /* Wiki Page Dark Mode */
-    --wiki-foreground-rgb: 255, 255, 255;
-    --wiki-background-rgb: 28, 28, 28;
-    --wiki-border-color-rgb: 128, 128, 128;
+    --wiki-foreground: #FFFFFF;
+    --wiki-background: #000000;
+    --wiki-border-color: #474A48;
+    --wiki-link-color: #0000FF;
 
     /* Michael Jordan Wiki Page Dark Mode */
-    --mj-wiki-foreground-rgb: 255, 255, 255;
-    --mj-wiki-background-rgb: 0, 0, 0;
-    --mj-wiki-border-color-rgb: 139, 0, 0;
+    --michael-foreground: #000000;
+    --michael-background: #FFFFFF;
+    --michael-border-color: #CE1141;
+    --michael-secondary-color: #333234;
+    --michael-tertiary-color: #89CFF0A;
 
     /* Enhanced Page Dark Mode */
-    --enhanced-foreground-rgb: 236, 240, 241;
-    --enhanced-background-rgb: 44, 62, 80;
-    --enhanced-border-color-rgb: 22, 31, 40;
+    --enhanced-foreground: #22223B;
+    --enhanced-background: #ECE487;
+    --enhanced-border-color: #474A48;
+    --enhanced-secondary-color: #BCD0C7;
+
+    /* Enhanced Page Dark Mode */
+    --base-foreground: #22223B;
+    --base-background: #ECE487;
+    --base-border-color: #474A48;
+    --base-secondary-color: #333234;
+
   }
 }
 
@@ -99,12 +123,12 @@ html, body {
 
 .home-color-scheme {
   height: 100%;
-  color: rgb(var(--home-foreground-rgb));
-  background: rgb(var(--home-background-rgb));
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
 .home-border-style {
-  border: 4px solid rgb(var(--home-border-color-rgb));
+  border: 4px solid var(--home-border-color);
   padding: 10px;
   margin: 4px;
 }
@@ -116,8 +140,8 @@ html, body {
 
 .wiki-color-scheme {
   height: 100%;
-  color: rgb(var(--wiki-foreground-rgb));
-  background: rgb(var(--wiki-background-rgb));
+  color: var(--wiki-foreground);
+  background: var(--wiki-background);
 }
 
 
@@ -127,8 +151,8 @@ html, body {
 
 .enhanced-color-scheme {
   height: 100%;
-  color: rgb(var(--enhanced-foreground-rgb));
-  background: rgb(var(--enhanced-background-rgb));
+  color: var(--enhanced-foreground);
+  background: var(--enhanced-background);
 }
 
 
@@ -138,8 +162,8 @@ html, body {
 
 .michael-color-scheme {
   height: 100%;
-  color: #CE1141;
-  background: rgb(var(--mj-wiki-background-rgb));
+  color: var(--michael-foreground);
+  background: var(--michael-background);
 }
 
 
@@ -149,8 +173,8 @@ html, body {
 
 .swift-color-scheme {
   height: 100%;
-  color: rgb(var(--mj-wiki-foreground-rgb));
-  background: rgb(var(--mj-wiki-background-rgb));
+  color: var(--mj-wiki-foreground-rgb);
+  background: var(--mj-wiki-background-rgb);
 }
 
 

@@ -38,7 +38,12 @@ const MainPage = () => {
               beyond your site usage will be collected.
             </p>
             <div className="home-border-style">
-              <InputField id='login' label='This is the dog' placeholder='ExamplePassword' type='beast'/>
+              <InputField id='login' label='Username: ' placeholder='ExamplePassword' type='text'/>
+            </div>
+            <div className="mb-4">
+              <Link className="hover:font-bold hover:text-current" href="/topics/">
+                Explore Topics
+              </Link>
             </div>
             <p className="mb-4 text-center">
               For more details on the infrastructure and design principles of this research,
