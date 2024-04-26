@@ -59,21 +59,19 @@ const InteractionTracker: React.FC = () => {
     }, [globalState, currentPath]);
 
     const throttle = <F extends (...args: any[]) => void>(func: F, limit: number): ((...args: Parameters<F>) => void) => {
-        let lastFunc: NodeJS.Timeout;
-        let lastRan: number;
-        return function(...args: Parameters<F>) {
-            const context = this;
-            if (!lastRan) {
-                func.apply(context, args);
-                lastRan = Date.now();
-            } else {
-                clearTimeout(lastFunc);
+        let lastFunc: NodeJS.Timeout | undefined;
+        let lastRan = 0; // Initialize to 0 to avoid undefined
+
+        return (...args: Parameters<F>) => {
+            const now = Date.now();
+            if (!lastRan || (now - lastRan >= limit)) {
+                if (lastFunc) {
+                    clearTimeout(lastFunc);
+                }
                 lastFunc = setTimeout(() => {
-                    if ((Date.now() - lastRan) >= limit) {
-                        func.apply(context, args);
-                        lastRan = Date.now();
-                    }
-                }, limit - (Date.now() - lastRan));
+                    func(...args);
+                    lastRan = now;
+                }, limit);
             }
         };
     };
