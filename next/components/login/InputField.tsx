@@ -1,4 +1,4 @@
-'use client'
+/*'use client'
 import React from 'react';
 
 interface InputFieldProps {
@@ -30,4 +30,4 @@ const InputField = ({ id, label, placeholder, type, borderStyle, value }: InputF
 };
 
 export default InputField;
-
+*/

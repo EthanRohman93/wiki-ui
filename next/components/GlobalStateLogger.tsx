@@ -13,7 +13,7 @@ const GlobalStateLogger = () => {
     }
   }, [globalState]);
 
-  return null; // This component does not render anything
+  return null;
 };
 
 export default GlobalStateLogger;

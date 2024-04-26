@@ -1,4 +1,4 @@
-'use client'
+/*'use client'
 import React, { useState, useContext } from 'react';
 import { MyGlobalStateContext } from '../GlobalState'; // Adjust path as necessary
 
@@ -37,4 +37,4 @@ const InputSubmitter = ({ placeholder = 'Enter username', buttonText = 'Explore 
 };
 
 export default InputSubmitter;
-
+*/

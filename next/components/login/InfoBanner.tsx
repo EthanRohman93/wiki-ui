@@ -1,4 +1,4 @@
-'use client'
+/*'use client'
 import React from 'react';
 
 const InfoBanner: React.FC = () => {
@@ -9,4 +9,4 @@ const InfoBanner: React.FC = () => {
   );
 };
 
-export default InfoBanner;
+export default InfoBanner;*/

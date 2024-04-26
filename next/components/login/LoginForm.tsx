@@ -1,4 +1,4 @@
-'use client'
+/*'use client'
 import React from 'react';
 import InputField from './InputField';
 import GenerateCredentials from './CredentialsButton';
@@ -16,4 +16,4 @@ const LoginForm: React.FC = () => {
   );
 };
 
-export default LoginForm;
+export default LoginForm;*/
