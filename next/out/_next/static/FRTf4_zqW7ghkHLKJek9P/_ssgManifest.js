@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fenhanced-wiki\u002F[ename]","\u002Fwiki\u002F[wname]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
