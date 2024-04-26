@@ -1,6 +1,5 @@
 'use client'
-import { cookies } from 'next/headers';
-import React, { useState } from 'react';
+import React from 'react';
 
 interface InputFieldProps {
   id: string;
@@ -13,17 +12,7 @@ interface InputFieldProps {
 
 const InputField = ({ id, label, placeholder, type, borderStyle, value }: InputFieldProps) => {
   const style = `${borderStyle} p-1 m-2`;
-  const cookieStore = cookies();
-  const [inputValue, setInputValue] = useState('');
 
-  const handleSubmit = async () => {
-    try {
-      console.log(cookieStore.get(id));
-    }
-    catch (error) {
-      console.log('failed to set cookie', error)
-    }
-  }
   
   return (
     <div className="input-wrapper">
@@ -34,9 +23,8 @@ const InputField = ({ id, label, placeholder, type, borderStyle, value }: InputF
         type={type}
         placeholder={placeholder}
         value={value}
-        onChange={(e) => setInputValue(e.target.value)}
       />
-      <button type='submit' onSubmit={handleSubmit}>Submit</button>
+      <button type='submit'>Submit</button>
     </div>
   );
 };

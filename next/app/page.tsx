@@ -1,8 +1,8 @@
 import React from 'react';
 import RootLayout from './layout';
 import Link from 'next/link';
-import InputField from '@/components/login/InputField';
-import { cookies } from 'next/headers';
+import ClientUsernameInput from '@/components/ClientUsernameInput';
+import { MyGlobalStateProvider } from '@/components/GlobalState';
 
 /*
  * TODO
@@ -17,7 +17,6 @@ import { cookies } from 'next/headers';
 
 const MainPage = () => {
   return (
-    <RootLayout>
       <div className="home-color-scheme flex items-center justify-center h-screen">
         <div className='flex flex-col items-center justify-center w-full
                     max-w-4xl p-4 home-border-style rounded-xl'>
@@ -39,13 +38,7 @@ const MainPage = () => {
               to help improve future user experiences. Rest assured, no personal data
               beyond your site usage will be collected.
             </p>
-            <div className="home-border-style rounded-xl">
-              <InputField id='login' 
-                    label='Username: ' 
-                    placeholder='ExamplePassword'
-                    type='text' 
-                    borderStyle='rounded-xl'/>
-            </div>
+            <ClientUsernameInput />
             <div className="mb-4">
               <Link className="hover:font-bold hover:text-current" href="/topics/">
                 Explore Topics
@@ -57,7 +50,6 @@ const MainPage = () => {
             </p>
         </div>
       </div>
-    </RootLayout>
   );
 };
 

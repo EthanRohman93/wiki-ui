@@ -1,10 +1,11 @@
-'use client'
 import React from 'react';
 import Link from 'next/link';
+import GlobalStateLogger from '@/components/GlobalStateLogger';
 
 const TopicsPage = () => {
   return (
     <div className='home-color-scheme'>
+        <GlobalStateLogger />
         <h1 className="mb-4">Topics Page</h1>
         <ol>
             <li>

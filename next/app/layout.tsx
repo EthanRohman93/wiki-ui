@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { MyGlobalStateProvider } from '@/components/GlobalState';
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +18,9 @@ export default function RootLayout({
     <html lang="en"
         className={inter.className}>
       <body className={inter.className}>
-          {children}
+            <MyGlobalStateProvider>
+              {children}
+            </MyGlobalStateProvider>
       </body>
     </html>
   );
