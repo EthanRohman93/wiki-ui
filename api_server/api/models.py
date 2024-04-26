@@ -1,4 +1,9 @@
 from django.db import models
+from django.contrib.auth import get_user_model
+import uuid
+
+
+User = get_user_model()
 
 
 class Feedback(models.Model):
@@ -28,9 +33,11 @@ class Feedback(models.Model):
 
 
 class Interaction(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    username = models.CharField(max_length=150, blank=True, null=True)
     type = models.CharField(max_length=50)
     details = models.JSONField()
     timestamp = models.DateTimeField()
 
     def __str__(self):
-        return f"{self.type} - {self.timestamp}"
+        return f"{self.username if self.username else 'Unknown'} - {self.type} - {self.timestamp}"

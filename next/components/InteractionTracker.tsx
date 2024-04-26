@@ -1,5 +1,6 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
+import { MyGlobalStateContext } from '@/components/GlobalState';
 
 interface InteractionDetail {
     x: number | null;
@@ -11,19 +12,43 @@ interface InteractionDetail {
     scrollDepth: number | null;
     width: number | null;
     height: number | null;
-    [key: string]: any;  // Additional details as a flexible object
+    [key: string]: any;
 }
 
 interface Interaction {
+    username: string;
     type: string;
     timestamp: string;
     details: InteractionDetail;
 }
 
-const InteractionTracker = () => {
+const InteractionTracker: React.FC = () => {
+    const globalState = useContext(MyGlobalStateContext);
+    const [currentPath, setCurrentPath] = useState<string>('');
+
     const interactions: Interaction[] = [];
 
     useEffect(() => {
+        setCurrentPath(window.location.pathname);
+        if (!globalState) {
+            console.error("Global state is not available!");
+            return;
+        }
+
+        const setupListeners = () => {
+            const eventTypes = ['click', 'touchend', 'mouseover', 'mousemove', 'scroll', 'keypress', 'resize'];
+            eventTypes.forEach(eventType => {
+                document.addEventListener(eventType, throttledLogInteraction as EventListener);
+            });
+        };
+
+        const removeListeners = () => {
+            const eventTypes = ['click', 'touchend', 'mouseover', 'mousemove', 'scroll', 'keypress', 'resize'];
+            eventTypes.forEach(eventType => {
+                document.removeEventListener(eventType, throttledLogInteraction as EventListener);
+            });
+        };
+
         setupListeners();
         const intervalId = setInterval(sendBatch, 15000); // Log batch every 15 seconds
 
@@ -31,7 +56,27 @@ const InteractionTracker = () => {
             removeListeners();
             clearInterval(intervalId);
         };
-    }, []);
+    }, [globalState, currentPath]);
+
+    const throttle = <F extends (...args: any[]) => void>(func: F, limit: number): ((...args: Parameters<F>) => void) => {
+        let lastFunc: NodeJS.Timeout;
+        let lastRan: number;
+        return function(...args: Parameters<F>) {
+            const context = this;
+            if (!lastRan) {
+                func.apply(context, args);
+                lastRan = Date.now();
+            } else {
+                clearTimeout(lastFunc);
+                lastFunc = setTimeout(() => {
+                    if ((Date.now() - lastRan) >= limit) {
+                        func.apply(context, args);
+                        lastRan = Date.now();
+                    }
+                }, limit - (Date.now() - lastRan));
+            }
+        };
+    };
 
     const logInteraction = (event: MouseEvent & KeyboardEvent & TouchEvent, additionalDetails: object = {}) => {
         const baseDetails: InteractionDetail = {
@@ -44,10 +89,12 @@ const InteractionTracker = () => {
             scrollDepth: window.scrollY,
             width: window.innerWidth,
             height: window.innerHeight,
+            page: currentPath,
             ...additionalDetails
         };
 
         const interaction: Interaction = {
+            username: globalState?.username || "LandingPage",
             type: event.type,
             timestamp: new Date().toISOString(),
             details: baseDetails
@@ -55,48 +102,38 @@ const InteractionTracker = () => {
 
         interactions.push(interaction);
 
-        if (interactions.length >= 100) {
+        if (interactions.length >= 1000) {
             sendBatch();
         }
     };
+
+    const throttledLogInteraction = throttle(logInteraction, 3000); // Throttle to run every 3 seconds
 
     const sendBatch = (): void => {
         if (interactions.length === 0) return; // Prevent sending empty batches
 
         console.log('Sending interactions:', interactions);
-        fetch('/api/log-interactions', {
+
+        fetch('http://localhost:8000/log-interactions/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                // Add your headers here, such as 'X-CSRFToken': getCookie('csrftoken')
             },
             body: JSON.stringify(interactions)
-        }).then(response => {
-            if (response.ok) {
-                console.log('Batch sent successfully.');
-                interactions.length = 0; // Clear after sending
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
             }
-        }).catch(error => console.error('Error sending batch:', error));
-    };
-
-    const setupListeners = (): void => {
-        document.addEventListener('click', logInteraction as EventListener);
-        document.addEventListener('touchend', logInteraction as EventListener);
-        document.addEventListener('mouseover', logInteraction as EventListener);
-        document.addEventListener('mousemove', logInteraction as EventListener);
-        document.addEventListener('scroll', logInteraction as EventListener);
-        document.addEventListener('keypress', logInteraction as EventListener);
-        document.addEventListener('resize', logInteraction as EventListener);
-    };
-
-    const removeListeners = (): void => {
-        document.removeEventListener('click', logInteraction as EventListener);
-        document.removeEventListener('touchend', logInteraction as EventListener);
-        document.removeEventListener('mouseover', logInteraction as EventListener);
-        document.removeEventListener('mousemove', logInteraction as EventListener);
-        document.removeEventListener('scroll', logInteraction as EventListener);
-        document.removeEventListener('keypress', logInteraction as EventListener);
-        document.removeEventListener('resize', logInteraction as EventListener);
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success:', data);
+            interactions.length = 0; // Clear interactions after successful send
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
 
     return null;
