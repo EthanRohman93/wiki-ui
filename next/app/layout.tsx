@@ -20,10 +20,10 @@ export default function RootLayout({
         className={inter.className}>
       <body className={inter.className}>
             <MyGlobalStateProvider>
-              <InteractionTracker />
               {children}
             </MyGlobalStateProvider>
       </body>
     </html>
   );
 }
+/*<InteractionTracker />*/

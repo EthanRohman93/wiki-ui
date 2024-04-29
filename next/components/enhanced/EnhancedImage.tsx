@@ -5,7 +5,7 @@ type PropsType = {
     wname: string;
 };
 
-const ClassicImage = ({ wname }: PropsType) => {
+const EnhancedImage = ({ wname }: PropsType) => {
     const imagePath = `/images/${wname}.jpg`;
 
     return (
@@ -20,4 +20,4 @@ const ClassicImage = ({ wname }: PropsType) => {
     );
 };
 
-export default ClassicImage;
+export default EnhancedImage;

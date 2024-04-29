@@ -1,10 +1,12 @@
 'use client'
 import React, { useState, useContext } from 'react';
-import { MyGlobalStateContext } from '@/components/GlobalState'; // Ensure correct path
+import { MyGlobalStateContext } from '@/components/GlobalState';
+import { useRouter } from 'next/navigation';
 
 const ClientUsernameInput = () => {
     const [inputValue, setInputValue] = useState('');
     const globalState = useContext(MyGlobalStateContext);
+    const router = useRouter()
 
     if (!globalState) {
         throw new Error("ClientUsernameInput must be used within a MyGlobalStateProvider");
@@ -17,20 +19,21 @@ const ClientUsernameInput = () => {
     };
 
     const handleSubmit = () => {
-        setUsername(inputValue); // Update the global state
-        console.log('Username set to:', inputValue); // Optionally log the username to the console
+        setUsername(inputValue);
+        console.log('Username set to:', inputValue);
+        router.push('/topics');
     };
 
     return (
-        <div className="client-username-input">
+        <div className="client-username-input flex flex-col">
             <input
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
-                placeholder="Enter Username"
-                className="text-input mb-4 p-2 border rounded"
+                placeholder="SleepyDawg"
+                className="flex-1 justify-center text-input rounded-xl home-input-style"
             />
-            <button onClick={handleSubmit} className="submit-button p-2 rounded hover:bg-gray-100">
+            <button onClick={handleSubmit} className="flex-1 justify-center rounded-xl home-button-style">
                 Submit Username
             </button>
         </div>

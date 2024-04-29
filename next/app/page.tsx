@@ -1,8 +1,7 @@
+'use client'
 import React from 'react';
-import RootLayout from './layout';
-import Link from 'next/link';
 import ClientUsernameInput from '@/components/ClientUsernameInput';
-import { MyGlobalStateProvider } from '@/components/GlobalState';
+import SampleComponent from '@/components/wiki/ClassicList';
 
 /*
  * TODO
@@ -17,10 +16,10 @@ import { MyGlobalStateProvider } from '@/components/GlobalState';
 
 const MainPage = () => {
   return (
-      <div className="home-color-scheme flex items-center justify-center h-screen">
+      <div className="home-color-scheme flex items-center justify-center h-full">
         <div className='flex flex-col items-center justify-center w-full
                     max-w-4xl p-4 home-border-style rounded-xl'>
-            <h1 className="text-2xl font-bold mb-4">Welcome to Our User Experience Research</h1>
+            <h1 className="text-2xl font-bold mb-4">Welcome</h1>
             <p className="mb-4">
               Thank you for visiting! We are excited to have you participate in our study,
               which aims to explore different layouts and styles to enhance user experience,
@@ -38,16 +37,11 @@ const MainPage = () => {
               to help improve future user experiences. Rest assured, no personal data
               beyond your site usage will be collected.
             </p>
-            <ClientUsernameInput />
-            <div className="mb-4">
-              <Link className="hover:font-bold hover:text-current" href="/topics/">
-                Explore Topics
-              </Link>
-            </div>
             <p className="mb-4 text-center">
-              For more details on the infrastructure and design principles of this research,
-              please visit my portfolio http://ethanrohman.com.
+                For more details on the infrastructure and design principles of this research,
+                please visit my portfolio http://ethanrohman.com.
             </p>
+            <ClientUsernameInput />
         </div>
       </div>
   );

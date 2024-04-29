@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useState, ReactNode, FC } from 'react';
+import { createContext, useState, ReactNode } from 'react';
 
 // Define a type for the context's value
 type MyGlobalStateContextType = {
@@ -15,7 +15,7 @@ type MyGlobalStateProviderProps = {
   children: ReactNode;
 };
 
-const MyGlobalStateProvider: FC<MyGlobalStateProviderProps> = ({ children }) => {
+const MyGlobalStateProvider = ({ children }: MyGlobalStateProviderProps) => {
   const [username, setUsername] = useState('');
 
   // This is the value that will be available to all consuming components

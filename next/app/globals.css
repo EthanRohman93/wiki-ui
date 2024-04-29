@@ -54,60 +54,152 @@
   --wiki-border-color: #474A48;
   --wiki-link-color: #0000FF;
   
-  /* Michael Jordan Wiki Page Light Mode */
-  --michael-foreground: #FFFFFF;
-  --michael-background: #000000;
-  --michael-border-color: #CE1141;
-  --michael-secondary-color: #333234;
-  --michael-tertiary-color: #89CFF0A;
-
   /* Enhanced Page Light Mode */
   --enhanced-foreground: #ECE487;
   --enhanced-background: #22223B;
   --enhanced-border-color: #474A48;
   --enhanced-secondary-color: #BCD0C7;
 
-  /* Enhanced Page Light Mode */
-  --base-foreground: #ECE487;
-  --base-background: #22223B;
-  --base-border-color: #474A48;
-  --base-secondary-color: #333234;
+  /* Michael Jordan Wiki Page Light Mode */
+  --jordan-foreground: #000000;
+  --jordan-background: #FFFFFF;
+  --jordan-border-color: #CE1141;
+  --jordan-secondary-color: #333234;
+  --jordan-tertiary-color: #89CFF0A;
+
+  /* Marie Curie */
+  --curie-foreground: var(--enhanced-foreground);
+  --curie-background: var(--enhanced-background);
+  --curie-border-color: var(--enhanced-border-color);
+  --curie-secondary-color: var(--enhanced-secondary-color);
+
+  /* Egypt */
+  --egypt-foreground: #20603D;
+  --egypt-background: #C4A484;
+  --egypt-border-color: #0072BB; /* Sky blue */
+  --egypt-secondary-color: #9C661F;
+
+  /* Internet */
+  --internet-foreground: var(--enhanced-foreground);
+  --internet-background: var(--enhanced-background);
+  --internet-border-color: var(--enhanced-border-color);
+  --internet-secondary-color: var(--enhanced-secondary-color);
+
+  /* Amazon */
+  --amazon-foreground: #20603D; /* Dark rich green */
+  --amazon-background: #F7DB70; /* Light yellow */
+  --amazon-border-color: #FFA500; /* Bright orange */
+  --amazon-secondary-color: #20603D;
+
+  /* Shakespeare */
+  --shakespeare-foreground: var(--enhanced-foreground);
+  --shakespeare-background: var(--enhanced-background);
+  --shakespeare-border-color: var(--enhanced-border-color);
+  --shakespeare-secondary-color: var(--enhanced-secondary-color);
+
+  /* Socrates */
+  --socrates-foreground: var(--enhanced-foreground);
+  --socrates-background: var(--enhanced-background);
+  --socrates-border-color: var(--enhanced-border-color);
+  --socrates-secondary-color: var(--enhanced-secondary-color);
+
+  /* Tubman */
+  --tubman-foreground: var(--enhanced-foreground);
+  --tubman-background: var(--enhanced-background);
+  --tubman-border-color: var(--enhanced-border-color);
+  --tubman-secondary-color: var(--enhanced-secondary-color);
+
+  /* Youyou */
+  --youyou-foreground: var(--enhanced-foreground);
+  --youyou-background: var(--enhanced-background);
+  --youyou-border-color: var(--enhanced-border-color);
+  --youyou-secondary-color: var(--enhanced-secondary-color);
+
+  /* Taylor Swift */
+  --swift-foreground: #000000; /* Blonde */
+  --swift-background: #FFD700; /* Light blue */
+  --swift-border-color: #87CEFA; /* Dark color */
+  --swift-secondary-color: #FFD700;
 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Home Page Dark Mode */
-    --home-foreground: #ECE4B7;
-    --home-background: #22223B;
-    --home-border-color: #808080;
-    --home-secondary-color: #FFEEF2;
-    --home-tertiary-color: #C3F3C0;
+      /* Home Page Dark Mode */
+      --home-foreground: #ECE4B7; /* Light cream */
+      --home-background: #22223B; /* Dark blue */
 
-    /* Wiki Page Dark Mode */
-    --wiki-foreground: #FFFFFF;
-    --wiki-background: #000000;
-    --wiki-border-color: #474A48;
-    --wiki-link-color: #0000FF;
+      /* Wiki Page Dark Mode */
+      --wiki-foreground: #FFFFFF; /* White */
+      --wiki-background: #000000; /* Black */
 
-    /* Michael Jordan Wiki Page Dark Mode */
-    --michael-foreground: #000000;
-    --michael-background: #FFFFFF;
-    --michael-border-color: #CE1141;
-    --michael-secondary-color: #333234;
-    --michael-tertiary-color: #89CFF0A;
+      /* Enhanced Page Dark Mode */
+      --enhanced-foreground: #22223B; /* Dark blue */
+      --enhanced-background: #ECE487; /* Light yellow */
 
-    /* Enhanced Page Dark Mode */
-    --enhanced-foreground: #22223B;
-    --enhanced-background: #ECE487;
-    --enhanced-border-color: #474A48;
-    --enhanced-secondary-color: #BCD0C7;
+      /* Michael Jordan Wiki Page Dark Mode */
+      --jordan-foreground: #000000; /* Black */
+      --jordan-background: #FFFFFF; /* White */
 
-    /* Enhanced Page Dark Mode */
-    --base-foreground: #22223B;
-    --base-background: #ECE487;
-    --base-border-color: #474A48;
-    --base-secondary-color: #333234;
+      /* Marie Curie Dark Mode */
+      --curie-foreground: var(--enhanced-background);
+      --curie-background: var(--enhanced-foreground);
+
+      /* Egypt Dark Mode */
+      --egypt-foreground: #C4A484; /* Sandy color */
+      --egypt-background: #20603D; /* Dark green */
+
+      /* Internet Dark Mode */
+      --internet-foreground: var(--enhanced-background);
+      --internet-background: var(--enhanced-foreground);
+
+      /* Amazon Dark Mode */
+      --amazon-foreground: #F7DB70; /* Light yellow */
+      --amazon-background: #20603D; /* Dark rich green */
+
+      /* Shakespeare Dark Mode */
+      --shakespeare-foreground: var(--enhanced-background);
+      --shakespeare-background: var(--enhanced-foreground);
+
+      /* Socrates Dark Mode */
+      --socrates-foreground: var(--enhanced-background);
+      --socrates-background: var(--enhanced-foreground);
+
+      /* Tubman Dark Mode */
+      --tubman-foreground: var(--enhanced-background);
+      --tubman-background: var(--enhanced-foreground);
+
+      /* Youyou Dark Mode */
+      --youyou-foreground: var(--enhanced-background);
+      --youyou-background: var(--enhanced-foreground);
+
+      /* Taylor Swift Dark Mode */
+      --swift-foreground: #FFD700; /* Light blue */
+      --swift-background: #000000; /* Black */
+
+      /* Maintain other color properties */
+      --home-border-color: #808080; /* Gray */
+      --home-secondary-color: #FFEEF2; /* Light pink */
+      --home-tertiary-color: #C3F3C0; /* Pale green */
+      --wiki-border-color: #474A48; /* Dark gray */
+      --wiki-link-color: #0000FF; /* Blue */
+      --jordan-border-color: #CE1141; /* Red */
+      --jordan-secondary-color: #333234; /* Dark gray */
+      --jordan-tertiary-color: #89CFF0; /* Light blue */
+      --egypt-border-color: #0072BB; /* Sky blue */
+      --egypt-secondary-color: #9C661F;
+      --amazon-border-color: #FFA500; /* Bright orange */
+      --amazon-secondary-color: #20603D;
+      --shakespeare-border-color: var(--enhanced-border-color);
+      --shakespeare-secondary-color: var(--enhanced-secondary-color);
+      --socrates-border-color: var(--enhanced-border-color);
+      --socrates-secondary-color: var(--enhanced-secondary-color);
+      --tubman-border-color: var(--enhanced-border-color);
+      --tubman-secondary-color: var(--enhanced-secondary-color);
+      --youyou-border-color: var(--enhanced-border-color);
+      --youyou-secondary-color: var(--enhanced-secondary-color);
+      --swift-border-color: #87CEFA; /* Dark color */
+      --swift-secondary-color: #FFD700; /* Blonde */
 
   }
 }
@@ -116,16 +208,88 @@ html, body {
   height: 100%;
 }
 
+/* Home Page Color Scheme */
+.home-color-scheme {
+  color: var(--home-foreground);
+  background: var(--home-background);
+}
+
+/* Wiki Page Color Scheme */
+.wiki-color-scheme {
+  color: var(--wiki-foreground);
+  background: var(--wiki-background);
+}
+
+/* Enhanced Page Color Scheme */
+.enhanced-color-scheme {
+  color: var(--enhanced-foreground);
+  background: var(--enhanced-background);
+}
+
+/* Michael Jordan Wiki Page Color Scheme */
+.jordan-color-scheme {
+  color: var(--jordan-foreground);
+  background: var(--jordan-background);
+}
+
+/* Marie Curie Color Scheme */
+.curie-color-scheme {
+  color: var(--curie-foreground);
+  background: var(--curie-background);
+}
+
+/* Egypt Color Scheme */
+.egypt-color-scheme {
+  color: var(--egypt-foreground);
+  background: var(--egypt-background);
+}
+
+/* Internet Color Scheme */
+.internet-color-scheme {
+  color: var(--internet-foreground);
+  background: var(--internet-background);
+}
+
+/* Amazon Color Scheme */
+.amazon-color-scheme {
+  color: var(--amazon-foreground);
+  background: var(--amazon-background);
+}
+
+/* Shakespeare Color Scheme */
+.shakespeare-color-scheme {
+  color: var(--shakespeare-foreground);
+  background: var(--shakespeare-background);
+}
+
+/* Socrates Color Scheme */
+.socrates-color-scheme {
+  color: var(--socrates-foreground);
+  background: var(--socrates-background);
+}
+
+/* Tubman Color Scheme */
+.tubman-color-scheme {
+  color: var(--tubman-foreground);
+  background: var(--tubman-background);
+}
+
+/* Youyou Color Scheme */
+.youyou-color-scheme {
+  color: var(--youyou-foreground);
+  background: var(--youyou-background);
+}
+
+/* Taylor Swift Color Scheme */
+.swift-color-scheme {
+  color: var(--swift-foreground);
+  background: var(--swift-background);
+}
 
 /*
 * Home Styles
 */
 
-.home-color-scheme {
-  height: 100%;
-  color: var(--home-foreground);
-  background: var(--home-background);
-}
 
 .home-border-style {
   border: 4px solid var(--home-border-color);
@@ -133,50 +297,56 @@ html, body {
   margin: 4px;
 }
 
+.home-button-style {
+    color: var(--home-background);
+    background-color: var(--home-secondary-color);
+    padding: 8px 16px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
 
-/*
-* Wiki Styles
-*/
+.home-button-style:hover {
+    color: var(--home-background);
+    font-weight: bold;
+    transform: scale(1.02);
+}
 
-.wiki-color-scheme {
-  height: 100%;
-  color: var(--wiki-foreground);
-  background: var(--wiki-background);
+.home-input-style {
+    color: var(--home-background);
+    background: var(--home-secondary-color);
+    padding: 8px;
+    margin: 4px;
+}
+
+.home-input-style:focus {
+    color: var(--home-background);
 }
 
 
 /*
-* Enhanced Styles
+* Topics Styles
 */
 
-.enhanced-color-scheme {
-  height: 100%;
-  color: var(--enhanced-foreground);
-  background: var(--enhanced-background);
+.topic-item {
+  margin-bottom: 10px;
 }
 
-
-/*
-* Michael Jordan Styles
-*/
-
-.michael-color-scheme {
-  height: 100%;
-  color: var(--michael-foreground);
-  background: var(--michael-background);
+.topic-link {
+  color: var(--home-foreground);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-
-/*
-* Taylor Swift Styles
-*/
-
-.swift-color-scheme {
-  height: 100%;
-  color: var(--mj-wiki-foreground-rgb);
-  background: var(--mj-wiki-background-rgb);
+.topic-link:hover {
+  @apply font-bold text-current;
+  transition: color 0.3s ease-in-out;
 }
 
+.topic-border {
+    border: 4px solid var(--home-border-color);
+}
 
 
 @media (max-width: 600px) {
