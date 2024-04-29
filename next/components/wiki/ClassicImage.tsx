@@ -5,16 +5,20 @@ type PropsType = {
     wname: string;
 };
 
-const ClassicImage = ({ wname }: PropsType) => {
-    const imagePath = `/images/${wname}.jpg`;
+const ClassicImage = async ({ wname }: PropsType) => {
 
     return (
-        <div>
+        <div className='flex-1 p-2 max-w-xs'>
             <Image
-                src={imagePath}
-                width={500}
-                height={300}
+                src={`/images/${wname}.jpg`}
+                style={{
+                    width: '100%',
+                    height: 'auto',
+                }}
+                width={300}
+                height={500}
                 alt={`${wname} Image`}
+                className='border-l'
             />
         </div>
     );

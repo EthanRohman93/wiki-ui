@@ -1,6 +1,7 @@
 import React from 'react';
 import ClassicContent from '@/components/wiki/ClassicContent';
 import ClassicHeader from '@/components/wiki/ClassicHeader';
+import ClassicImage from '@/components/wiki/ClassicImage';
 
 type ParamsType = {
     params: {
@@ -31,7 +32,10 @@ const WikiPage = ({ params }: ParamsType) => {
                     <ClassicHeader wname={params.wname} />
                 </div>
                 <div className='flex-1 border-t'>
-                    <ClassicContent wname={params.wname} />
+                    <div className='flex flex-row'>
+                        <ClassicContent wname={params.wname} />
+                        <ClassicImage wname={params.wname} />
+                    </div>
                 </div>
             </div>
         </div>

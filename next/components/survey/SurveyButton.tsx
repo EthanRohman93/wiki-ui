@@ -3,10 +3,9 @@ import React from 'react';
 
 const SurveyButton = () => {
     return (
-        <div>
-            Beast
-        </div>
+        <button type="submit">Submit Feedback</button>
     );
 };
 
 export default SurveyButton;
+

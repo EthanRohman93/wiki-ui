@@ -37,14 +37,16 @@ def log_interaction(request):
 def submit_form(request):
     try:
         feedback = Feedback(
-            ease_of_use=request.data.get('easeOfUse'),
-            interface_satisfaction=int(request.data.get('interfaceSatisfaction')),
-            features_used=request.data.get('featuresUsed', []),
-            experience_issues=request.data.get('experienceIssues', 'no') == 'yes',
-            issue_description=request.data.get('issueDescription', ''),
-            performance_rating=request.data.get('performanceRating'),
-            recommendation_likelihood=int(request.data.get('recommendationLikelihood')),
-            additional_comments=request.data.get('additionalComments', '')
+            question1=int(request.data.get('question1', 1)),
+            question2=int(request.data.get('question2', 1)),
+            question3=int(request.data.get('question3', 1)),
+            question4=int(request.data.get('question4', 1)),
+            question5=int(request.data.get('question5', 1)),
+            question6=int(request.data.get('question6', 1)),
+            question7=int(request.data.get('question7', 1)),
+            question8=int(request.data.get('question8', 1)),
+            question9=int(request.data.get('question9', 1)),
+            question10=int(request.data.get('question10', 1)),
         )
         feedback.save()
         return Response({"status": "success", "message": "Feedback submitted successfully."}, status=status.HTTP_201_CREATED)

@@ -17,7 +17,7 @@ const ClassicContent = async ({ wname }: PropsType) => {
     const parsedContent = JSON.parse(content).content
     
     return (
-        <div>
+        <div className='flex-1'>
             {parsedContent.map((section:SectionType, index:number) => (
                 <div key={index}>
                     <h1 className='text-xl p-2 m-2'>{section.h}</h1>
