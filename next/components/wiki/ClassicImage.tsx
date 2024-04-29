@@ -12,8 +12,8 @@ const ClassicImage = ({ wname }: PropsType) => {
         <div>
             <Image
                 src={imagePath}
-                width={500}  // Set a fixed width or dynamic based on your design requirements
-                height={300} // Set a fixed height or dynamic based on your design requirements
+                width={500}
+                height={300}
                 alt={`${wname} Image`}
             />
         </div>

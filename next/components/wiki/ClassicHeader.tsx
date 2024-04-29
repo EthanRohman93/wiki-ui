@@ -21,7 +21,7 @@ const ClassicHeader = ({ wname }: PropsType) => {
     const headerText = nameMap[wname] || wname; // Fallback to wname if no match in map
 
     return (
-        <div>
+        <div className='text-4xl p-4 m-4'>
             {headerText}
         </div>
     );

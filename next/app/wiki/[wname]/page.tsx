@@ -25,9 +25,15 @@ export function generateStaticParams() {
 
 const WikiPage = ({ params }: ParamsType) => {
     return (
-        <div className='wiki-color-scheme'>
-            <ClassicHeader wname={params.wname} />
-            <ClassicContent wname={params.wname} />
+        <div className='wiki-color-scheme flex flex-col h-full items-center'>
+            <div className='justify-center max-w-4xl border-l border-r h-full'>
+                <div className='flex-1'>
+                    <ClassicHeader wname={params.wname} />
+                </div>
+                <div className='flex-1 border-t'>
+                    <ClassicContent wname={params.wname} />
+                </div>
+            </div>
         </div>
     );
 };

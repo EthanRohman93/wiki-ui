@@ -20,8 +20,8 @@ const ClassicContent = async ({ wname }: PropsType) => {
         <div>
             {parsedContent.map((section:SectionType, index:number) => (
                 <div key={index}>
-                    <h1>{section.h}</h1>
-                    <p>{section.p}</p>
+                    <h1 className='text-xl p-2 m-2'>{section.h}</h1>
+                    <p className='p-2 m-2'>{section.p}</p>
                 </div>
             ))}
         </div>
