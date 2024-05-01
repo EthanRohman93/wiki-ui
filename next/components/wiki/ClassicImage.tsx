@@ -8,17 +8,12 @@ type PropsType = {
 const ClassicImage = async ({ wname }: PropsType) => {
 
     return (
-        <div className='flex-1 p-2 max-w-xs'>
+        <div className='h-auto p-2 m-2'>
             <Image
                 src={`/images/${wname}.jpg`}
-                style={{
-                    width: '100%',
-                    height: 'auto',
-                }}
-                width={300}
-                height={500}
+                width={100}
+                height={100}
                 alt={`${wname} Image`}
-                className='border-l'
             />
         </div>
     );

@@ -1,0 +1,39 @@
+{
+  "title": "Name of the Wiki Page",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "content": [
+        "This section provides an introduction to the topic, highlighting key aspects and why it is significant."
+      ]
+    },
+    {
+      "id": "earlyLife",
+      "heading": "Early Life",
+      "content": [
+        "This section details the early life and background of the subject, setting the stage for their later achievements."
+      ]
+    },
+    {
+      "id": "majorContributions",
+      "heading": "Major Contributions",
+      "content": [
+        "This section describes the major contributions or discoveries made by the subject, explaining their impact and significance."
+      ]
+    },
+    {
+      "id": "awardsLegacy",
+      "heading": "Awards and Legacy",
+      "content": [
+        "This section covers any notable awards received by the subject and discusses their legacy and lasting impact on their field or society."
+      ]
+    }
+  ],
+  "quickFacts": [
+    "Fact 1 about the topic.",
+    "Fact 2 about the topic.",
+    "Fact 3 about the topic."
+  ]
+}
+

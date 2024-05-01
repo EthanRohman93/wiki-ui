@@ -1,21 +1,43 @@
 {
-  "content": [
+  "title": "Tu Youyou: A Pioneer in Malaria Treatment",
+  "sections": [
     {
-      "h": "Introduction to Tu Youyou",
-      "p": "Tu Youyou is a Chinese pharmaceutical chemist and educator whose discoveries of novel therapies against malaria have saved millions of lives worldwide. Born in 1930 in Ningbo, Zhejiang, China, Tu was awarded the Nobel Prize in Physiology or Medicine in 2015 for her work in extracting artemisinin, which has been highly effective against malaria."
+      "id": "introduction",
+      "heading": "Introduction to Tu Youyou",
+      "content": [
+        "Tu Youyou is a Chinese pharmaceutical chemist and educator whose discoveries of novel therapies against malaria have saved millions of lives worldwide. Born in 1930 in Ningbo, Zhejiang, China, Tu was awarded the Nobel Prize in Physiology or Medicine in 2015 for her work in extracting artemisinin, which has been highly effective against malaria.",
+        "Her groundbreaking work, which combines traditional Chinese medicine with modern scientific approaches, has been revolutionary in the fight against a disease that affects millions annually."
+      ]
     },
     {
-      "h": "Early Life and Education",
-      "p": "Tu Youyou attended Peking University in Beijing, where she studied pharmacology. She began her research career at the China Academy of Traditional Chinese Medicine, where she was tasked with finding a cure for malaria in the 1960s during the Vietnam War, as part of a secret project known as Project 523."
+      "id": "earlyLife",
+      "heading": "Early Life and Education",
+      "content": [
+        "Tu Youyou attended Peking University in Beijing, where she studied pharmacology. She began her research career at the China Academy of Traditional Chinese Medicine, where she was tasked with finding a cure for malaria in the 1960s during the Vietnam War, as part of a secret project known as Project 523.",
+        "Her dedication and innovative approach to ancient texts were instrumental in her path to discovering artemisinin."
+      ]
     },
     {
-      "h": "Discovery of Artemisinin",
-      "p": "Tu Youyou's major breakthrough came when she turned to ancient Chinese medical texts and found a reference to sweet wormwood, which had been used to treat fever in traditional Chinese medicine. Through meticulous testing and extraction processes, she and her team isolated artemisinin, a compound that proved to be highly effective in treating malaria, significantly reducing the death rates caused by the disease."
+      "id": "discoveryArtemisinin",
+      "heading": "Discovery of Artemisinin",
+      "content": [
+        "Tu Youyou's major breakthrough came when she turned to ancient Chinese medical texts and found a reference to sweet wormwood, which had been used to treat fever in traditional Chinese medicine. Through meticulous testing and extraction processes, she and her team isolated artemisinin, a compound that proved to be highly effective in treating malaria, significantly reducing the death rates caused by the disease.",
+        "Her discovery is considered one of the most significant medical breakthroughs of the 20th century, providing a potent and accessible treatment for malaria with global implications."
+      ]
     },
     {
-      "h": "Awards and Legacy",
-      "p": "The impact of Tu Youyou's work has been profound. In addition to the Nobel Prize, she has received numerous other awards, including the Lasker Award in clinical medicine. Her work has transformed malaria treatment and has had a lasting impact on global public health. Her dedication to blending traditional Chinese medicine with modern scientific techniques has opened new avenues for the treatment of other diseases as well."
+      "id": "awardsLegacy",
+      "heading": "Awards and Legacy",
+      "content": [
+        "The impact of Tu Youyou's work has been profound. In addition to the Nobel Prize, she has received numerous other awards, including the Lasker Award in clinical medicine. Her work has transformed malaria treatment and has had a lasting impact on global public health.",
+        "Her dedication to blending traditional Chinese medicine with modern scientific techniques has opened new avenues for the treatment of other diseases as well, inspiring a new generation of researchers in pharmacology."
+      ]
     }
+  ],
+  "quickFacts": [
+    "Tu Youyou was born in 1930 in Ningbo, Zhejiang, China.",
+    "She was awarded the Nobel Prize in Physiology or Medicine in 2015.",
+    "Tu discovered artemisinin, a drug that has significantly reduced the mortality rates from malaria globally."
   ]
 }
 

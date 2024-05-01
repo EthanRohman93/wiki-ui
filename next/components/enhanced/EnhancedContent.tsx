@@ -7,21 +7,24 @@ type PropsType = {
 }
 
 type SectionType = {
-    h: string;
-    p: string;
+    heading: string;
+    content: string[];
+    id?: string;
 }
 
 const EnhancedContent = async ({ ename }: PropsType) => {
     const filePath = path.join(process.cwd(), 'public', 'content', `${ename}.json`);
     const content = await fs.readFile(filePath, 'utf8');
-    const parsedContent = JSON.parse(content).content
+    const parsedContent = JSON.parse(content).sections
     
     return (
-        <div>
-            {parsedContent.map((section:SectionType, index:number) => (
+        <div className='flex-1'>
+            {parsedContent && parsedContent.map((section: SectionType, index: number) => (
                 <div key={index}>
-                    <h1>{section.h}</h1>
-                    <p>{section.p}</p>
+                    <h1 className='font-medium text-xl p-2 m-2' id={section.id}>{section.heading}</h1>
+                    {section.content.map((paragraph: string, pIndex: number) => (
+                        <p key={pIndex} className='p-2 m-2'>{paragraph}</p>
+                    ))}
                 </div>
             ))}
         </div>

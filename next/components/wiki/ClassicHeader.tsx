@@ -18,10 +18,9 @@ const nameMap: { [key: string]: string } = {
 };
 
 const ClassicHeader = ({ wname }: PropsType) => {
-    const headerText = nameMap[wname] || wname; // Fallback to wname if no match in map
-
+    const headerText = nameMap[wname] || wname;
     return (
-        <div className='text-4xl p-4 m-4'>
+        <div className='text-5xl p-6 m-6'>
             {headerText}
         </div>
     );

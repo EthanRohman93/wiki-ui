@@ -1,21 +1,44 @@
 {
-  "content": [
+  "title": "The Amazon Rainforest: Earth's Green Lung",
+  "sections": [
     {
-      "h": "Introduction to the Amazon Rainforest",
-      "p": "The Amazon Rainforest, known as the lungs of our planet, is the world’s largest tropical rainforest, spanning over 5.5 million square kilometers. It is home to unparalleled biodiversity and is critical in regulating global climate. The rainforest spans across nine countries in South America, with the majority in Brazil."
+      "id": "introduction",
+      "heading": "Introduction to the Amazon Rainforest",
+      "content": [
+        "The Amazon Rainforest, known as the lungs of our planet, is the world’s largest tropical rainforest, spanning over 5.5 million square kilometers. It is home to unparalleled biodiversity and is critical in regulating global climate.",
+        "The rainforest spans across nine countries in South America, with the majority in Brazil. It plays a crucial role in producing 20% of the world's oxygen and houses the largest collection of living plants and animal species in the world."
+      ]
     },
     {
-      "h": "Flora and Fauna",
-      "p": "The Amazon hosts an estimated 390 billion individual trees divided into 16,000 species. Among these, the rubber tree and the giant water lily are iconic. It is also home to wildlife such as the jaguar, sloth, and several species of monkeys, alongside approximately 2.5 million insect species. The biodiversity is crucial for ecological balance and offers a myriad of undiscovered medicinal plants."
+      "id": "floraFauna",
+      "heading": "Flora and Fauna",
+      "content": [
+        "The Amazon hosts an estimated 390 billion individual trees divided into 16,000 species. Among these, the rubber tree and the giant water lily are iconic.",
+        "It is also home to wildlife such as the jaguar, sloth, and several species of monkeys, alongside approximately 2.5 million insect species. The biodiversity is crucial for ecological balance and offers a myriad of undiscovered medicinal plants."
+      ]
     },
     {
-      "h": "Environmental Challenges",
-      "p": "The Amazon Rainforest faces significant environmental threats, primarily from deforestation due to logging, agriculture, and ranching. Illegal mining also poses a severe risk, leading to habitat destruction and pollution. These activities not only threaten the diverse species living there but also contribute to global climate change by reducing the forest's capacity to absorb carbon dioxide."
+      "id": "environmentalChallenges",
+      "heading": "Environmental Challenges",
+      "content": [
+        "The Amazon Rainforest faces significant environmental threats, primarily from deforestation due to logging, agriculture, and ranching. Illegal mining also poses a severe risk, leading to habitat destruction and pollution.",
+        "These activities not only threaten the diverse species living there but also contribute to global climate change by reducing the forest's capacity to absorb carbon dioxide."
+      ]
     },
     {
-      "h": "Conservation Efforts",
-      "p": "Conservation efforts in the Amazon are vital for its survival and the well-being of the Earth’s climate. Initiatives include protected areas, sustainable land use practices, and international cooperation, particularly involving the countries that the Amazon spans. Education and awareness campaigns also play a crucial role in preserving this invaluable ecological treasure."
+      "id": "conservationEfforts",
+      "heading": "Conservation Efforts",
+      "content": [
+        "Conservation efforts in the Amazon are vital for its survival and the well-being of the Earth’s climate. Initiatives include protected areas, sustainable land use practices, and international cooperation, particularly involving the countries that the Amazon spans.",
+        "Education and awareness campaigns also play a crucial role in preserving this invaluable ecological treasure. Non-governmental organizations and international treaties aim to curb deforestation and promote sustainable resource use."
+      ]
     }
+  ],
+  "quickFacts": [
+    "The Amazon Rainforest covers approximately 5.5 million square kilometers.",
+    "It houses over 390 billion trees and more than 16,000 species.",
+    "Around 20% of the world's freshwater is contained within the Amazon Basin.",
+    "Deforestation in the Amazon has accelerated in recent years, posing serious threats to its biodiversity and the global climate."
   ]
 }
 
