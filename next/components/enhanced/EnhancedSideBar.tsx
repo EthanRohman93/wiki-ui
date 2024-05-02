@@ -1,12 +1,18 @@
-'use client'
 import React from 'react';
+import EnhancedImage from './EnhancedImage';
+import EnhancedFacts from './EnhancedFacts';
 
-const SampleComponent = () => {
+type PropsType = {
+    ename: string;
+};
+
+const EnhancedSideBar = ({ ename }: PropsType) => {
     return (
-        <div id='sample_component'>
-            Beast
+        <div>
+            <EnhancedImage ename={ename} />
+            <EnhancedFacts ename={ename} />
         </div>
     );
 };
 
-export default SampleComponent;
+export default EnhancedSideBar;

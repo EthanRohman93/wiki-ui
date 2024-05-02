@@ -1,20 +1,15 @@
 import React from 'react';
-import { promises as fs } from 'fs';
-import path from 'path';
+import SurveyButton from '../enhanced/SurveyButton';
+import Link from 'next/link';
 
-type PropsType = {
-    wname: string;
-}
-
-
-const ClassicFooter = async ({ wname }: PropsType) => {
-    const filePath = path.join(process.cwd(), 'public', 'content', `${wname}.json`);
-    const content = await fs.readFile(filePath, 'utf8');
-    const quickFacts = JSON.parse(content).quickFacts;
-
+const ClassicFooter = async () => {
     return (
-        <div className="justify-center text-center p-2 m-2">
-            {wname}
+        <div className="justify-center text-center p-4">
+            <Link href={'/topics'} className='
+                hover:font-extrabold font-medium 
+                rounded-xl p-2 m-2 border-2'
+            > Go to Topics</Link>
+            <SurveyButton />
         </div>
     );
 };

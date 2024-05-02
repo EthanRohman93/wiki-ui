@@ -43,7 +43,7 @@
 :root {
   /* Home Page Light Mode */
   --home-foreground: #22223B;
-  --home-background: #ECE4B7;
+  --home-background: #EFE9CC;
   --home-border-color: #808080;
   --home-secondary-color: #FFEEF2;
   --home-tertiary-color: #C3F3C0;
@@ -55,7 +55,7 @@
   --wiki-link-color: #0000FF;
   
   /* Enhanced Page Light Mode */
-  --enhanced-foreground: #ECE487;
+  --enhanced-foreground: #EFE9CC;
   --enhanced-background: #22223B;
   --enhanced-border-color: #474A48;
   --enhanced-secondary-color: #BCD0C7;
@@ -74,7 +74,7 @@
   --curie-secondary-color: var(--enhanced-secondary-color);
 
   /* Egypt */
-  --egypt-foreground: #20603D;
+  --egypt-foreground: #081810;
   --egypt-background: #C4A484;
   --egypt-border-color: #0072BB; /* Sky blue */
   --egypt-secondary-color: #9C661F;
@@ -117,7 +117,7 @@
 
   /* Taylor Swift */
   --swift-foreground: #000000; /* Blonde */
-  --swift-background: #FFD700; /* Light blue */
+  --swift-background: #D2B48C;
   --swift-border-color: #87CEFA; /* Dark color */
   --swift-secondary-color: #FFD700;
 
@@ -126,7 +126,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
       /* Home Page Dark Mode */
-      --home-foreground: #ECE4B7; /* Light cream */
+      --home-foreground: #EFE9CC; /* Light cream */
       --home-background: #22223B; /* Dark blue */
 
       /* Wiki Page Dark Mode */
@@ -135,11 +135,11 @@
 
       /* Enhanced Page Dark Mode */
       --enhanced-foreground: #22223B; /* Dark blue */
-      --enhanced-background: #ECE487; /* Light yellow */
+      --enhanced-background: #EFE9CC; /* Light yellow */
 
       /* Michael Jordan Wiki Page Dark Mode */
-      --jordan-foreground: #000000; /* Black */
-      --jordan-background: #FFFFFF; /* White */
+      --jordan-foreground: #FFFFFF; /* Black */
+      --jordan-background: #000000; /* White */
 
       /* Marie Curie Dark Mode */
       --curie-foreground: var(--enhanced-background);
@@ -147,7 +147,7 @@
 
       /* Egypt Dark Mode */
       --egypt-foreground: #C4A484; /* Sandy color */
-      --egypt-background: #20603D; /* Dark green */
+      --egypt-background: #081810; /* Dark green */
 
       /* Internet Dark Mode */
       --internet-foreground: var(--enhanced-background);
@@ -174,7 +174,7 @@
       --youyou-background: var(--enhanced-foreground);
 
       /* Taylor Swift Dark Mode */
-      --swift-foreground: #FFD700; /* Light blue */
+      --swift-foreground: #D2B48C; /* Light blue */
       --swift-background: #000000; /* Black */
 
       /* Maintain other color properties */
@@ -299,7 +299,7 @@ html, body {
 
 .home-button-style {
     color: var(--home-background);
-    background-color: var(--home-secondary-color);
+    background-color: var(--home-foreground);
     padding: 8px 16px;
     margin: 8px;
     border: none;
@@ -315,7 +315,7 @@ html, body {
 
 .home-input-style {
     color: var(--home-background);
-    background: var(--home-secondary-color);
+    background: var(--home-foreground);
     padding: 8px;
     margin: 4px;
 }
@@ -367,6 +367,15 @@ html, body {
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
   }
 }
 

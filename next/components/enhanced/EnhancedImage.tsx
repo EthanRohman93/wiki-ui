@@ -2,11 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 
 type PropsType = {
-    wname: string;
+    ename: string;
 };
 
-const EnhancedImage = ({ wname }: PropsType) => {
-    const imagePath = `/images/${wname}.jpg`;
+const EnhancedImage = ({ ename }: PropsType) => {
+    const imagePath = `/images/${ename}.jpg`;
 
     return (
         <div>
@@ -14,7 +14,8 @@ const EnhancedImage = ({ wname }: PropsType) => {
                 src={imagePath}
                 width={500}  // Set a fixed width or dynamic based on your design requirements
                 height={300} // Set a fixed height or dynamic based on your design requirements
-                alt={`${wname} Image`}
+                alt={`${ename} Image`}
+                className='rounded-xl border-2'
             />
         </div>
     );

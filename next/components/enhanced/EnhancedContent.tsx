@@ -16,9 +16,12 @@ const EnhancedContent = async ({ ename }: PropsType) => {
     const filePath = path.join(process.cwd(), 'public', 'content', `${ename}.json`);
     const content = await fs.readFile(filePath, 'utf8');
     const parsedContent = JSON.parse(content).sections
+    const title = JSON.parse(content).title
+
     
     return (
         <div className='flex-1'>
+            <h1 className='text-4xl font-bold'>{title}</h1>
             {parsedContent && parsedContent.map((section: SectionType, index: number) => (
                 <div key={index}>
                     <h1 className='font-medium text-xl p-2 m-2' id={section.id}>{section.heading}</h1>

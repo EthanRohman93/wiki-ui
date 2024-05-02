@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import ClientUsernameInput from '@/components/ClientUsernameInput';
-import SampleComponent from '@/components/wiki/ClassicList';
 
 /*
  * TODO
@@ -20,27 +19,15 @@ const MainPage = () => {
         <div className='flex flex-col items-center justify-center w-full
                     max-w-4xl p-4 home-border-style rounded-xl'>
             <h1 className="text-2xl font-bold mb-4">Welcome</h1>
-            <p className="mb-4">
-              Thank you for visiting! We are excited to have you participate in our study,
-              which aims to explore different layouts and styles to enhance user experience,
-              functionality, and the effective transfer of information.
-            </p>
-            <p className="mb-4">
-              By entering a username below, you will be randomly assigned to one of our
-              experimental layouts. You can exit the experience at any time. Once completed,
-              we kindly ask you to fill out a short survey, taking less than a minute, to
-              gather your impressions. Your feedback is invaluable, and afterward,
-              you will have the opportunity to explore other designs.
-            </p>
-            <p className="mb-4">
-              Please note that your interactions with the site will be anonymously recorded
-              to help improve future user experiences. Rest assured, no personal data
-              beyond your site usage will be collected.
-            </p>
-            <p className="mb-4 text-center">
-                For more details on the infrastructure and design principles of this research,
-                please visit my portfolio http://ethanrohman.com.
-            </p>
+          <p className="mb-4">
+            Hi, I am Ethan Rohman. Thank you for joining our study! We are eager to see how different designs can improve the way information is presented and experienced.
+          </p>
+          <p className="mb-4">
+            To participate, simply enter a username below. You will then be taken to a page with various topics to explore. Feel free to switch between topics at any time. You can exit the study whenever you like and complete a brief survey to share your thoughts.
+          </p>
+          <p className="mb-4">
+            Please be aware that while your interactions with the site are recorded anonymously to enhance future user experiences, no personal information beyond your site usage is collected.
+          </p>
             <ClientUsernameInput />
         </div>
       </div>

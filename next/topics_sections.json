@@ -1,0 +1,104 @@
+{
+    "topics": [
+        {
+            "title": "The Amazon Rainforest",
+            "file_name": "amazon",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to the Amazon Rainforest"},
+                {"id": "floraFauna", "heading": "Flora and Fauna"},
+                {"id": "environmentalChallenges", "heading": "Environmental Challenges"},
+                {"id": "conservationEfforts", "heading": "Conservation Efforts"}
+            ]
+        },
+        {
+            "title": "Michael Jordan",
+            "file_name": "jordan",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Michael Jordan"},
+                {"id": "earlyLife", "heading": "Early Life and College Career"},
+                {"id": "nbaCareer", "heading": "NBA Career and Achievements"},
+                {"id": "legacy", "heading": "Legacy and Cultural Impact"}
+            ]
+        },
+        {
+            "title": "Ancient Egypt",
+            "file_name": "egypt",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Ancient Egypt"},
+                {"id": "politicalStructure", "heading": "Political Structure and Pharaohs"},
+                {"id": "religionMythology", "heading": "Religion and Mythology"},
+                {"id": "culturalAchievements", "heading": "Cultural Achievements"}
+            ]
+        },
+        {
+            "title": "Socrates",
+            "file_name": "socrates",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Socrates"},
+                {"id": "philosophicalApproach", "heading": "Philosophical Approach"},
+                {"id": "contributions", "heading": "Contributions to Ethics and Knowledge"},
+                {"id": "trialDeath", "heading": "Trial and Death"}
+            ]
+        },
+        {
+            "title": "William Shakespeare",
+            "file_name": "shakespeare",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to William Shakespeare"},
+                {"id": "earlyLife", "heading": "Early Life and Career"},
+                {"id": "majorWorks", "heading": "Major Works and Themes"},
+                {"id": "legacy", "heading": "Legacy and Influence"}
+            ]
+        },
+        {
+            "title": "The Internet",
+            "file_name": "internet",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to the Internet"},
+                {"id": "developmentExpansion", "heading": "Development and Expansion"},
+                {"id": "keyTechnologies", "heading": "Key Technologies and Protocols"},
+                {"id": "impactSociety", "heading": "Impact on Society"}
+            ]
+        },
+        {
+            "title": "Marie Curie",
+            "file_name": "curie",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Marie Curie"},
+                {"id": "earlyLife", "heading": "Early Life and Education"},
+                {"id": "scientificContributions", "heading": "Scientific Contributions"},
+                {"id": "legacy", "heading": "Legacy and Honors"}
+            ]
+        },
+        {
+            "title": "Tu Youyou",
+            "file_name": "youyou",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Tu Youyou"},
+                {"id": "earlyLife", "heading": "Early Life and Education"},
+                {"id": "discoveryArtemisinin", "heading": "Discovery of Artemisinin"},
+                {"id": "awardsLegacy", "heading": "Awards and Legacy"}
+            ]
+        },
+        {
+            "title": "Taylor Swift",
+            "file_name": "swift",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Taylor Swift"},
+                {"id": "musicalCareer", "heading": "Musical Career and Evolution"},
+                {"id": "majorAchievements", "heading": "Major Achievements"},
+                {"id": "impactAdvocacy", "heading": "Impact and Advocacy"}
+            ]
+        },
+        {
+            "title": "Harriet Tubman",
+            "file_name": "tubman",
+            "sections": [
+                {"id": "introduction", "heading": "Introduction to Harriet Tubman"},
+                {"id": "earlyLife", "heading": "Early Life and Escape"},
+                {"id": "undergroundRailroad", "heading": "Role in the Underground Railroad"},
+                {"id": "laterLife", "heading": "Later Life and Legacy"}
+            ]
+        }
+    ]
+}

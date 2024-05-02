@@ -11,8 +11,8 @@ const ClassicImage = async ({ wname }: PropsType) => {
         <div className='h-auto p-2 m-2'>
             <Image
                 src={`/images/${wname}.jpg`}
-                width={100}
-                height={100}
+                width={300}
+                height={300}
                 alt={`${wname} Image`}
             />
         </div>

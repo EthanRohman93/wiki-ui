@@ -28,23 +28,21 @@ export function generateStaticParams() {
 
 const WikiPage = ({ params }: ParamsType) => {
     return (
-        <div className='wiki-color-scheme flex flex-col h-full items-center w-full'>
-            <div className='justify-center max-w-4xl border-l border-r h-full w-full'>
-                <div className='flex flex-1 justify-between w-full'>
-                    <div className='flex flex-col justify-start items-start'>
+        <div className='wiki-color-scheme flex flex-col h-max items-center'>
+            <div className='bg-inherit justify-center border-l border-r'>
+                <div className='max-w-4xl'>
+                    <div className='flex flex-1 justify-between'>
                         <ClassicHeader wname={params.wname} />
+                        <div className='flex flex-row justify-end items-end align-top'>
+                            <QuickFacts wname={params.wname} />
+                            <ClassicImage wname={params.wname} />
+                        </div>
                     </div>
-                    <div className='flex flex-row justify-end items-end'>
-                        <QuickFacts wname={params.wname} />
-                        <ClassicImage wname={params.wname} />
-                    </div>
-                </div>
-                <div className='flex flex-col flex-1 w-full'>
                     <div className='flex-1 border-t'>
                         <ClassicContent wname={params.wname} />
                     </div>
-                    <div className='border-t w-full'>
-                        <ClassicFooter wname={params.wname} />
+                    <div className='border-t'>
+                        <ClassicFooter />
                     </div>
                 </div>
             </div>
