@@ -20,7 +20,7 @@ const MainPage = () => {
                     max-w-4xl p-4 home-border-style rounded-xl'>
             <h1 className="text-2xl font-bold mb-4">Welcome</h1>
           <p className="mb-4">
-            Hi, I am Ethan Rohman. Thank you for joining our study! We are eager to see how different designs can improve the way information is presented and experienced.
+            Hi. Thank you for joining our study! We are eager to see how different designs can improve the way information is presented and experienced.
           </p>
           <p className="mb-4">
             To participate, simply enter a username below. You will then be taken to a page with various topics to explore. Feel free to switch between topics at any time. You can exit the study whenever you like and complete a brief survey to share your thoughts.
