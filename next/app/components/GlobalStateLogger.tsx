@@ -1,6 +1,6 @@
 'use client'
 import React, { useContext, useEffect } from 'react';
-import { MyGlobalStateContext } from '@/components/GlobalState'; // Ensure the path is correct
+import { MyGlobalStateContext } from './GlobalState'; // Ensure the path is correct
 
 const GlobalStateLogger = () => {
   const globalState = useContext(MyGlobalStateContext);

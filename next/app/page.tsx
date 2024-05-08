@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import ClientUsernameInput from '@/components/ClientUsernameInput';
+import ClientUsernameInput from './components/ClientUsernameInput';
 
 /*
  * TODO

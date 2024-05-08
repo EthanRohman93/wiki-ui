@@ -1,6 +1,6 @@
-import EnhancedContent from '@/components/enhanced/EnhancedContent';
-import EnhancedNavFooter from '@/components/enhanced/EnhancedNav';
-import EnhancedSideBar from '@/components/enhanced/EnhancedSideBar';
+import EnhancedContent from '../../components/enhanced/EnhancedContent';
+import EnhancedNavFooter from '../../components/enhanced/EnhancedNav';
+import EnhancedSideBar from '../../components/enhanced/EnhancedSideBar';
 import React from 'react';
 
 type ParamsType = {

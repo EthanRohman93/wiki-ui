@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useContext, useState } from 'react';
-import { MyGlobalStateContext } from '@/components/GlobalState';
+import { MyGlobalStateContext } from './GlobalState';
 
 interface InteractionDetail {
     x: number | null;

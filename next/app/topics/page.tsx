@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import TopicSelect from '@/components/topics/TopicSelect';
+import TopicSelect from '../components/topics/TopicSelect';
 
 const TopicsPage = () => {
   return (

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useContext } from 'react';
-import { MyGlobalStateContext } from '@/components/GlobalState';
+import { MyGlobalStateContext } from './GlobalState';
 import { useRouter } from 'next/navigation';
 
 const ClientUsernameInput = () => {

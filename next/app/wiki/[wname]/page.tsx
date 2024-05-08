@@ -1,9 +1,9 @@
 import React from 'react';
-import ClassicContent from '@/components/wiki/ClassicContent';
-import ClassicHeader from '@/components/wiki/ClassicHeader';
-import ClassicImage from '@/components/wiki/ClassicImage';
-import QuickFacts from '@/components/wiki/QuickFacts';
-import ClassicFooter from '@/components/wiki/ClassicFooter';
+import ClassicContent from '../../components/wiki/ClassicContent';
+import ClassicHeader from '../../components/wiki/ClassicHeader';
+import ClassicImage from '../../components/wiki/ClassicImage';
+import QuickFacts from '../../components/wiki/QuickFacts';
+import ClassicFooter from '../../components/wiki/ClassicFooter';
 
 type ParamsType = {
     params: {

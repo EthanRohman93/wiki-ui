@@ -2,45 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-* TODO:
-*   put initial formats for pages
-*   put initial colors for pages
-*   put font sizes for section heading and such
-*
-*   colors:
-*     home:
-*       space cadet 22223B
-*       laverder blush FFEEF
-*       gray 808080
-*       tea green C3F3C0
-*       vanilla ECE4B7
-*     michael:
-*       white FFFFFF
-*       bulls red CE1141
-*       black 000000
-*       jet 333234
-*       baby blue 89CFF0a
-*     wiki:
-*       white FFFFFF
-*       black 000000
-*       outer space 474A48
-*       link blue 0000FF
-*     enhanced:
-*       outer space 474A48
-*       space cadet 22223B
-*       vanilla ECE487
-*       ash gray BCD0C7
-*     base-enhanced:
-*       outer space 474A48
-*       ash gray BCD0C7
-*       dodger blue 0197F6
-*       vanilla ECE487
-*
-*/
 /* globals.css */
 
 :root {
+
+  /* Foregrounds */
+
+  /* Backgrounds */
+
+  /* Title */
+
+  /* Heading */
+
+  /* Content */
+
+  /* Border */
+
+  /* Link */
+
+
+
+
   /* Home Page Light Mode */
   --home-foreground: #22223B;
   --home-background: #EFE9CC;
@@ -125,57 +107,54 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-      /* Home Page Dark Mode */
-      --home-foreground: #EFE9CC; /* Light cream */
-      --home-background: #22223B; /* Dark blue */
 
-      /* Wiki Page Dark Mode */
-      --wiki-foreground: #FFFFFF; /* White */
-      --wiki-background: #000000; /* Black */
+      /* Foregrounds */
+        --home-foreground: #FFF9DB;
+        --wiki-foreground: #FFFFFF;
+        --jordan-foreground: #FFFFFF;
+        --egypt-foreground: #B28E6A;
+        --amazon-foreground: #FEFFBD;
+        --swift-foreground: #D2B48C;
 
-      /* Enhanced Page Dark Mode */
-      --enhanced-foreground: #22223B; /* Dark blue */
-      --enhanced-background: #EFE9CC; /* Light yellow */
+        --enhanced-foreground: var(--home-foreground);
+        --curie-foreground: var(--home-foreground);
+        --internet-foreground: var(--home-foreground);
+        --shakespeare-foreground: var(--home-foreground);
+        --socrates-foreground: var(--home-foreground);
+        --tubman-foreground: var(--home-foreground);
+        --youyou-foreground: var(--home-foreground);
 
-      /* Michael Jordan Wiki Page Dark Mode */
-      --jordan-foreground: #FFFFFF; /* Black */
-      --jordan-background: #000000; /* White */
+      /* Backgrounds */
+        --home-background: #020225;
+        --wiki-background: #000000;
+        --jordan-background: #000000;
+        --egypt-background: #031009;
+        --amazon-background: #012407;
+        --swift-background: #35485E;
 
-      /* Marie Curie Dark Mode */
-      --curie-foreground: var(--enhanced-background);
-      --curie-background: var(--enhanced-foreground);
+        --enhanced-background: var(--home-background);
+        --curie-background: var(--home-background);
+        --internet-background: var(--home-background);
+        --shakespeare-background: var(--home-background);
+        --socrates-background: var(--home-background);
+        --tubman-background: var(--home-background);
+        --youyou-background: var(--home-background);
 
-      /* Egypt Dark Mode */
-      --egypt-foreground: #C4A484; /* Sandy color */
-      --egypt-background: #081810; /* Dark green */
+      /* Title */
+        --home-title: #FFF4BC;
 
-      /* Internet Dark Mode */
-      --internet-foreground: var(--enhanced-background);
-      --internet-background: var(--enhanced-foreground);
+        --youyou-title: #000000;
 
-      /* Amazon Dark Mode */
-      --amazon-foreground: #F7DB70; /* Light yellow */
-      --amazon-background: #20603D; /* Dark rich green */
+      /* Heading */
 
-      /* Shakespeare Dark Mode */
-      --shakespeare-foreground: var(--enhanced-background);
-      --shakespeare-background: var(--enhanced-foreground);
+      /* Content */
 
-      /* Socrates Dark Mode */
-      --socrates-foreground: var(--enhanced-background);
-      --socrates-background: var(--enhanced-foreground);
+      /* Border */
 
-      /* Tubman Dark Mode */
-      --tubman-foreground: var(--enhanced-background);
-      --tubman-background: var(--enhanced-foreground);
+      /* Link */
 
-      /* Youyou Dark Mode */
-      --youyou-foreground: var(--enhanced-background);
-      --youyou-background: var(--enhanced-foreground);
 
-      /* Taylor Swift Dark Mode */
-      --swift-foreground: #D2B48C; /* Light blue */
-      --swift-background: #000000; /* Black */
+
 
       /* Maintain other color properties */
       --home-border-color: #808080; /* Gray */
@@ -254,6 +233,10 @@ html, body {
 .amazon-color-scheme {
   color: var(--amazon-foreground);
   background: var(--amazon-background);
+}
+
+.amazon-title {
+    color: ;
 }
 
 /* Shakespeare Color Scheme */
