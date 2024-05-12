@@ -3,7 +3,6 @@ import ClassicContent from '../../components/wiki/ClassicContent';
 import ClassicHeader from '../../components/wiki/ClassicHeader';
 import ClassicImage from '../../components/wiki/ClassicImage';
 import QuickFacts from '../../components/wiki/QuickFacts';
-import ClassicFooter from '../../components/wiki/ClassicFooter';
 
 type ParamsType = {
     params: {
@@ -28,9 +27,9 @@ export function generateStaticParams() {
 
 const WikiPage = ({ params }: ParamsType) => {
     return (
-        <div className='wiki-color-scheme flex flex-col h-max items-center'>
-            <div className='bg-inherit justify-center border-l border-r'>
-                <div className='max-w-4xl'>
+        <div className='wiki-color-scheme flex justify-center items-center min-h-screen'>
+            <div className='flex flex-col items-center max-w-3xl mx-auto border-l border-r'>
+                <div className='wiki-color-scheme bg-inherit h-full'>
                     <div className='flex flex-1 justify-between'>
                         <ClassicHeader wname={params.wname} />
                         <div className='flex flex-row justify-end items-end align-top'>
@@ -40,9 +39,6 @@ const WikiPage = ({ params }: ParamsType) => {
                     </div>
                     <div className='flex-1 border-t'>
                         <ClassicContent wname={params.wname} />
-                    </div>
-                    <div className='border-t'>
-                        <ClassicFooter />
                     </div>
                 </div>
             </div>

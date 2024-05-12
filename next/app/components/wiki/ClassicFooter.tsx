@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ClassicFooter = async () => {
     return (
-        <div className="justify-center text-center p-4">
+        <div className="justify-center border-t text-center p-4">
             <Link href={'/topics'} className='
                 hover:font-extrabold font-medium 
                 rounded-xl p-2 m-2 border-2'
