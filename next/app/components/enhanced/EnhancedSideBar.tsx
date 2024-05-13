@@ -8,7 +8,7 @@ type PropsType = {
 
 const EnhancedSideBar = ({ ename }: PropsType) => {
     return (
-        <div>
+        <div className='p-2'>
             <EnhancedImage ename={ename} />
             <EnhancedFacts ename={ename} />
         </div>

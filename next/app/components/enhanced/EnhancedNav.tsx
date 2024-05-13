@@ -10,8 +10,8 @@ type PropsType = {
 
 const EnhancedNavFooter = ({ ename }: PropsType) => {
     return (
-        <div className='flex flex-row justify-center items-center'>
-            <div>
+        <div className='border-t flex flex-row justify-center items-center '>
+            <div className='p-4'>
                 <EnhancedSearch />
             </div>
             <div>
