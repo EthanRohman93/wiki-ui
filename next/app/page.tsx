@@ -15,7 +15,7 @@ import ClientUsernameInput from './components/ClientUsernameInput';
 
 const MainPage = () => {
   return (
-      <div className="home-color-scheme flex items-center justify-center h-full">
+      <div className="home-color-scheme flex items-center justify-center min-h-screen">
         <div className='flex flex-col items-center justify-center w-full
                     max-w-4xl p-4 home-border-style rounded-xl'>
             <h1 className="text-2xl font-bold mb-4">Welcome</h1>

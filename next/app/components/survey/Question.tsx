@@ -4,16 +4,15 @@ import React from 'react';
 interface Props {
     questionText: string;
     name: string;
-    refProp: React.RefObject<HTMLSelectElement>;
 }
 
-const Question = ({ questionText, name, refProp }: Props) => {
+const Question = ({ questionText, name }: Props) => {
     return (
         <div className='flex flex-col px-2 py-4'>
             <label>{questionText}</label>
             <div className='flex flex-row justify-center'>
                 <div className='flex flex-col px-2'>
-                    <input type="radio" id={`${name}-1`} name={name} value="1" ref={refProp} />
+                    <input type="radio" id={`${name}-1`} name={name} value="1" />
                     <label htmlFor={`${name}-1`}>1 - Poor</label>
                 </div>
 

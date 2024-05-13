@@ -24,11 +24,9 @@ export function generateStaticParams() {
 const EnhancedPage = ({ params }: ParamsType) => {
     const colorScheme = `${params.ename}-color-scheme`
     return ( 
-        <div className={`${colorScheme} flex justify-center items-center`}>
-            <div className="flex flex-col items-center max-w-4xl mx-auto">
-                <div className='fex flex-row'>
-                    <EnhancedContent ename={params.ename} />
-                </div>
+        <div className={colorScheme}>
+            <div className="flex flex-col items-center max-w-5xl mx-auto min-h-screen">
+                <EnhancedContent ename={params.ename} />
             </div>
         </div>
     );

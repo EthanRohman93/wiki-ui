@@ -6,7 +6,7 @@ const EnhancedHome = () => {
   return (
       <div className="enhanced-color-scheme">
         <h1 className="mb-4"> Enhanced Wiki Landing Page</h1>
-        <Link href={'/enhanced-wiki/michael/'}>Michael Jordan Wiki</Link>
+        <Link href={'/enhanced-wiki/jordan/'}>Michael Jordan Wiki</Link>
       </div>
   );
 };

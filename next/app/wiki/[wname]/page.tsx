@@ -29,7 +29,7 @@ const WikiPage = ({ params }: ParamsType) => {
     return (
         <div className='wiki-color-scheme flex justify-center items-center min-h-screen'>
             <div className='flex flex-col items-center max-w-3xl mx-auto border-l border-r'>
-                <div className='wiki-color-scheme bg-inherit h-full'>
+                <div className='wiki-color-scheme bg-inherit'>
                     <div className='flex flex-1 justify-between'>
                         <ClassicHeader wname={params.wname} />
                         <div className='flex flex-row justify-end items-end align-top'>
@@ -37,7 +37,7 @@ const WikiPage = ({ params }: ParamsType) => {
                             <ClassicImage wname={params.wname} />
                         </div>
                     </div>
-                    <div className='flex-1 border-t'>
+                    <div className='flex-1 min-h-screen border-t'>
                         <ClassicContent wname={params.wname} />
                     </div>
                 </div>

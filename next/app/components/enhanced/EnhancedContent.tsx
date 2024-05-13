@@ -24,9 +24,9 @@ const EnhancedContent = async ({ ename }: PropsType) => {
     const paragraphStyle = `${ename}-paragraph p-2`
 
     return (
-        <div className='flex flex-col'>
-            <div className='flex flex-row h-fit'>
-                <div className='border-r overflow-y-hidden'>
+        <div className={`${ename}-color-scheme flex flex-col`}>
+            <div className='flex flex-row overflow-hidden pb-16'>
+                <div className='border-r min-h-screen'>
                     <h1 className={titleStyle}>{title}</h1>
                     {parsedContent && parsedContent.map((section: SectionType, index: number) => (
                         <div key={index}>
@@ -37,9 +37,11 @@ const EnhancedContent = async ({ ename }: PropsType) => {
                         </div>
                     ))}
                 </div>
-                <EnhancedSideBar ename={ename} />
+                <div className='w-fit min-w-[200px]'>
+                    <EnhancedSideBar ename={ename} />
+                </div>
             </div>
-            <div className='fixed bottom-0'>
+            <div className='fixed bottom-0 w-full max-w-5xl'>
                 <EnhancedNavFooter ename={ename}/>
             </div>
         </div>

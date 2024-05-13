@@ -1,12 +1,17 @@
 'use client'
-import React, { useRef,useState, FormEvent } from 'react';
+import React, { useState, FormEvent } from 'react';
 import Question from './Question';
 import SurveySubmit from './SurveySubmit';
 import { useRouter } from 'next/navigation';
 
+interface QuestionData {
+  questionText: string;
+  name: string;
+}
+
 const SurveyForm = () => {
-    const router = useRouter()
-    const questions = [
+const router = useRouter();
+    const questions: QuestionData[] = [
         { questionText: "What are your thoughts on the color scheme of our website?", name: "color_scheme" },
         { questionText: "How do you find the layout and organization of our website?", name: "layout_organization" },
         { questionText: "How would you rate the execution and performance of our website?", name: "execution_performance" },
@@ -15,15 +20,13 @@ const SurveyForm = () => {
         { questionText: "How likely are you to recommend our website to others based on its usability?", name: "usability_recommendation" }
     ];
     
-    const refs = questions.map(() => useRef<HTMLSelectElement>(null));
-
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setIsSubmitting(true);
-        const formData = new FormData(event.currentTarget); // Use currentTarget to ensure you're working with the form element
+        const formData = new FormData(event.currentTarget);
         const data = Object.fromEntries(formData.entries());
 
         fetch('/api/submit_form', {
@@ -34,18 +37,15 @@ const SurveyForm = () => {
             body: JSON.stringify(data),
         }).then(response => {
             if (!response.ok) {
-                router.push('/thankyou')
                 throw new Error('Network response was not ok');
             }
-            router.push('/thankyou')
             return response.json();
         }).then(data => {
             console.log('Success:', data);
-            router.push('/thankyou')
+            router.push('/thankyou');
             setIsSubmitting(false);
-        }).catch((error) => {
+        }).catch((error: any) => {
             console.error('Error:', error);
-            router.push('/thankyou')
             setError(error.message);
             setIsSubmitting(false);
         });
@@ -58,11 +58,9 @@ const SurveyForm = () => {
                     key={index}
                     questionText={question.questionText}
                     name={question.name}
-                    refProp={refs[index]}
                 />
             ))}
-
-            <SurveySubmit /> {/* Ensure this button component handles form submission correctly */}
+            <SurveySubmit />
             {isSubmitting && <p>Submitting...</p>}
             {error && <p>Error: {error}</p>}
         </form>
