@@ -43,6 +43,8 @@ const SurveyForm = () => {
       return;
     }
 
+    console.log('Form Data:', formData); // Log form data to ensure it's being populated correctly
+
     fetch('http://18.220.173.252/submit-form/', {
       method: 'POST',
       headers: {
@@ -91,8 +93,7 @@ const SurveyForm = () => {
       {isSubmitting && <p>Submitting...</p>}
       {error && <p>Error: {error}</p>}
     </form>
-    );
+  );
 };
-
 export default SurveyForm;
 

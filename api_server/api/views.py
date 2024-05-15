@@ -34,8 +34,8 @@ def log_interaction(request):
 @permission_classes([AllowAny])
 def submit_form(request):
     try:
-        # Dynamically get question data based on the form structure
-        question_data = {key: int(value) for key, value in request.data.items() if key.startswith('question')}
+        # Directly map the fields from request.data
+        question_data = {key: int(value) for key, value in request.data.items()}
         feedback = Feedback(**question_data)
         feedback.save()
         return Response({"status": "success", "message": "Feedback submitted successfully."}, status=status.HTTP_201_CREATED)
