@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: ./next
+    ports:
+      - "80:80"
+    depends_on:
+      - django
+
+  django:
+    build: ./api_server/
+    volumes:
+      - ./api_server:/app
+    environment:
+      - DATABASE_URL=postgres://django_user:1057@db/ui_study
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: django_user
+      POSTGRES_PASSWORD: 1057
+      POSTGRES_DB: ui_study
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+

@@ -1,0 +1,6 @@
+django
+djangorestframework>=3.12
+psycopg2-binary>=2.8  # For PostgreSQL
+gunicorn>=20.0  # WSGI HTTP Server for UNIX
+django-cors-headers>=3.5.0  # To handle Cross-Origin Resource Sharing (CORS)
+
