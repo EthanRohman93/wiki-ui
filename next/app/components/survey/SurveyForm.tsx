@@ -28,7 +28,7 @@ const router = useRouter();
         const formData = new FormData(event.currentTarget);
         const data = Object.fromEntries(formData.entries());
 
-        fetch('http://18.220.173.252:8000/submit_form', {
+        fetch('http://18.220.173.252/submit_form', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

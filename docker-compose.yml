@@ -11,6 +11,8 @@ services:
   django:
     container_name: api_server
     build: ./api_server/
+    ports:
+      - "8000:8000"
     volumes:
       - ./api_server:/app
     environment:
