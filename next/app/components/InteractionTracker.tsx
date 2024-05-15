@@ -110,7 +110,7 @@ const InteractionTracker = () => {
 
         console.log('Sending interactions:', interactions);
 
-        fetch('http://localhost:8000/log-interactions/', {
+        fetch('http://18.220.173.252:8000/log-interactions/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
