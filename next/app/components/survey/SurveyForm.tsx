@@ -1,6 +1,5 @@
 'use client'
 import React, { useState, FormEvent } from 'react';
-import SurveyButton from './SurveyButton';
 import { useRouter } from 'next/navigation';
 
 interface QuestionData {
@@ -88,11 +87,11 @@ const SurveyForm = () => {
           </div>
         </div>
       ))}
-      <SurveyButton />
+      <button type="submit" className='border-2 p-2 rounded-xl hover:font-extrabold'>Submit Feedback</button>
       {isSubmitting && <p>Submitting...</p>}
       {error && <p>Error: {error}</p>}
     </form>
-  );
+    );
 };
 
 export default SurveyForm;
