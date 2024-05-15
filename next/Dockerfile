@@ -7,6 +7,6 @@ COPY . .
 RUN npm run build
 
 FROM nginx:alpine
-COPY --from=builder /app/out /usr/share/nginx/html
+COPY --from=builder /app/out /var/www/html
 COPY ../nginx.conf /etc/nginx/conf.d/default.conf
 
