@@ -12,12 +12,11 @@ interface QuestionData {
 const SurveyForm = () => {
 const router = useRouter();
     const questions: QuestionData[] = [
-        { questionText: "What are your thoughts on the color scheme of our website?", name: "color_scheme" },
-        { questionText: "How do you find the layout and organization of our website?", name: "layout_organization" },
-        { questionText: "How would you rate the execution and performance of our website?", name: "execution_performance" },
-        { questionText: "What is your experience with the interactivity of our website?", name: "website_interactivity" },
+        { questionText: "What are your thoughts on the color scheme of the website?", name: "color_scheme" },
+        { questionText: "How do you find the layout and organization of the website?", name: "layout_organization" },
+        { questionText: "How would you rate the execution and performance of the website?", name: "execution_performance" },
+        { questionText: "What is your experience with the interactivity of the website?", name: "website_interactivity" },
         { questionText: "Did you experience any confusion while navigating our website?", name: "navigation_confusion" },
-        { questionText: "How likely are you to recommend our website to others based on its usability?", name: "usability_recommendation" }
     ];
     
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);

@@ -21,7 +21,7 @@ const EnhancedContent = async ({ ename }: PropsType) => {
     const title = JSON.parse(content).title
     const titleStyle = `${ename}-title text-4xl font-bold p-2`
     const headingStyle = `${ename}-heading text-xl font-medium p-2 m-2 w-fit border rounded-xl`
-    const paragraphStyle = `${ename}-paragraph p-2`
+    const paragraphStyle = `${ename}-content p-2`
 
     return (
         <div className={`${ename}-color-scheme flex flex-col`}>

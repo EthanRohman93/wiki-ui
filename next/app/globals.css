@@ -6,106 +6,119 @@
 
 :root {
 
-      /* Foregrounds */
-        --home-foreground: #FFF9DB;
-        --wiki-foreground: #FFFFFF;
-        --jordan-foreground: #FFFFFF;
-        --egypt-foreground: #B28E6A;
-        --amazon-foreground: #FEFFBD;
-        --swift-foreground: #D2B48C;
-
-      /* Backgrounds */
-        --home-background: #020225;
-        --wiki-background: #000000;
-        --jordan-background: #000000;
-        --egypt-background: #031009;
-        --amazon-background: #012407;
-        --swift-background: #35485E;
-
-      /* Title */
-        --home-title: #020225;
-        --wiki-title: #000000;
-        --jordan-title: #000000;
-        --egypt-title: #031009;
-        --amazon-title: #012407;
-        --swift-title: #35485E;
-
-      /* Heading */
-        --home-heading: #020225;
-        --wiki-heading: #000000;
-        --jordan-heading: #000000;
-        --egypt-heading: #031009;
-        --amazon-heading: #012407;
-        --swift-heading: #35485E;
-
-      /* Content */
-        --home-content: #020225;
-        --wiki-content: #000000;
-        --jordan-content: #000000;
-        --egypt-content: #031009;
-        --amazon-content: #012407;
-        --swift-content: #35485E;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
 
       /* Foregrounds */
         --home-foreground: #FFF9DB;
         --wiki-foreground: #FFFFFF;
-        --jordan-foreground: #FFFFFF;
-        --egypt-foreground: #B28E6A;
-        --amazon-foreground: #FEFFBD;
-        --swift-foreground: #D2B48C;
+        --jordan-foreground: #D1A7B2;
+        --egypt-foreground: #B09274;
+        --amazon-foreground: #FFFFCE;
+        --swift-foreground: #CFBDA4;
 
       /* Backgrounds */
-        --home-background: #020225;
+        --home-background: #0C0C21;
         --wiki-background: #000000;
         --jordan-background: #000000;
         --egypt-background: #031009;
-        --amazon-background: #012407;
-        --swift-background: #35485E;
+        --amazon-background: #011C05;
+        --swift-background: #2C3A4C;
 
       /* Title */
-        --home-title: #020225;
+        --home-title: #FFF59F;
         --wiki-title: #000000;
-        --jordan-title: #000000;
-        --egypt-title: #031009;
-        --amazon-title: #012407;
-        --swift-title: #35485E;
+        --jordan-title: #CE1141;
+        --egypt-title: #B58453;
+        --amazon-title: #FFFF9E;
+        --swift-title: #CEAE83;
 
       /* Heading */
-        --home-heading: #020225;
+        --home-heading: #FFF6A1;
         --wiki-heading: #000000;
-        --jordan-heading: #000000;
-        --egypt-heading: #031009;
-        --amazon-heading: #012407;
-        --swift-heading: #35485E;
+        --jordan-heading: #CE1141;
+        --egypt-heading: #B58A5E;
+        --amazon-heading: #FFFFB0;
+        --swift-heading: #CFB68D;
 
       /* Content */
-        --home-content: #020225;
+        --home-content: #FFF9BF;
         --wiki-content: #000000;
-        --jordan-content: #000000;
-        --egypt-content: #031009;
-        --amazon-content: #012407;
-        --swift-content: #35485E;
+        --jordan-content: #D1A7B2;
+        --egypt-content: #B38D68;
+        --amazon-content: #FFFFC2;
+        --swift-content: #D0B897;
+
+      /* Border */
+        --home-border: #020225;
+        --wiki-border: #000000;
+        --jordan-border: #000000;
+        --egypt-border: #031009;
+        --amazon-border: #012407;
+        --swift-border: #35485E;
 
       /* Maintain other color properties */
       --home-border-color: #808080; /* Gray */
       --home-secondary-color: #FFEEF2; /* Light pink */
       --home-tertiary-color: #C3F3C0; /* Pale green */
-      --wiki-border-color: #474A48; /* Dark gray */
-      --wiki-link-color: #0000FF; /* Blue */
-      --jordan-border-color: #CE1141; /* Red */
-      --jordan-secondary-color: #333234; /* Dark gray */
-      --jordan-tertiary-color: #89CFF0; /* Light blue */
-      --egypt-border-color: #0072BB; /* Sky blue */
-      --egypt-secondary-color: #9C661F;
-      --amazon-border-color: #FFA500; /* Bright orange */
-      --amazon-secondary-color: #20603D;
-      --swift-border-color: #87CEFA; /* Dark color */
-      --swift-secondary-color: #FFD700; /* Blonde */
+ 
+}
 
+@media (prefers-color-scheme: dark) {
+  :root {
+
+
+      /* Foregrounds */
+        --home-foreground: #FFF9DB;
+        --wiki-foreground: #FFFFFF;
+        --jordan-foreground: #D1A7B2;
+        --egypt-foreground: #B09274;
+        --amazon-foreground: #FFFFCE;
+        --swift-foreground: #CFBDA4;
+
+      /* Backgrounds */
+        --home-background: #0C0C21;
+        --wiki-background: #000000;
+        --jordan-background: #000000;
+        --egypt-background: #031009;
+        --amazon-background: #011C05;
+        --swift-background: #2C3A4C;
+
+      /* Title */
+        --home-title: #FFF59F;
+        --wiki-title: #000000;
+        --jordan-title: #CE1141;
+        --egypt-title: #B58453;
+        --amazon-title: #FFFF9E;
+        --swift-title: #CEAE83;
+
+      /* Heading */
+        --home-heading: #FFF6A1;
+        --wiki-heading: #000000;
+        --jordan-heading: #CE1141;
+        --egypt-heading: #B58A5E;
+        --amazon-heading: #FFFFB0;
+        --swift-heading: #CFB68D;
+
+      /* Content */
+        --home-content: #FFF9BF;
+        --wiki-content: #000000;
+        --jordan-content: #D1A7B2;
+        --egypt-content: #B38D68;
+        --amazon-content: #FFFFC2;
+        --swift-content: #D0B897;
+
+      /* Border */
+        --home-border: #020225;
+        --wiki-border: #000000;
+        --jordan-border: #000000;
+        --egypt-border: #031009;
+        --amazon-border: #012407;
+        --swift-border: #35485E;
+
+      /* Maintain other color properties */
+      --home-border-color: #808080; /* Gray */
+      --home-secondary-color: #FFEEF2; /* Light pink */
+      --home-tertiary-color: #C3F3C0; /* Pale green */
+ 
   }
 }
 
@@ -137,23 +150,6 @@ html, body {
   background: var(--wiki-background);
 }
 
-/* Enhanced Page Color Scheme */
-.enhanced-color-scheme {
-  color: var(--enhanced-foreground);
-  background: var(--enhanced-background);
-}
-
-.enhanced-title {
-  color: var(--home-title);
-}
-
-.enhanced-heading {
-  color: var(--home-title);
-}
-
-.enhanced-content {
-  color: var(--home-title);
-}
 
 /* Michael Jordan Wiki Page Color Scheme */
 .jordan-color-scheme {
@@ -161,34 +157,34 @@ html, body {
   background: var(--jordan-background);
 }
 
-.enhanced-title {
-  color: var(--home-title);
+.jordan-title {
+  color: var(--jordan-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.jordan-heading {
+  color: var(--jordan-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.jordan-content {
+  color: var(--jordan-content);
 }
 
 /* Marie Curie Color Scheme */
 .curie-color-scheme {
-  color: var(--curie-foreground);
-  background: var(--curie-background);
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
-.enhanced-title {
+.curie-title {
   color: var(--home-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.curie-heading {
+  color: var(--home-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.curie-content {
+  color: var(--home-content);
 }
 
 /* Egypt Color Scheme */
@@ -197,34 +193,34 @@ html, body {
   background: var(--egypt-background);
 }
 
-.enhanced-title {
-  color: var(--home-title);
+.egypt-title {
+  color: var(--egypt-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.egypt-heading {
+  color: var(--egypt-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.egypt-content {
+  color: var(--egypt-contnet);
 }
 
 /* Internet Color Scheme */
 .internet-color-scheme {
-  color: var(--internet-foreground);
-  background: var(--internet-background);
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
-.enhanced-title {
+.internet-title {
   color: var(--home-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.internet-heading {
+  color: var(--home-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.internet-content {
+  color: var(--home-content);
 }
 
 /* Amazon Color Scheme */
@@ -234,92 +230,90 @@ html, body {
 
 }
 
-.enhanced-title {
-  color: var(--home-title);
+.amazon-title {
+  color: var(--amazon-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.amazon-heading {
+  color: var(--amazon-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.amazon-content {
+  color: var(--amazon-content);
 }
 
 /* Shakespeare Color Scheme */
 .shakespeare-color-scheme {
-  color: var(--shakespeare-foreground);
-  background: var(--shakespeare-background);
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
-.enhanced-title {
+.shakespeare-title {
   color: var(--home-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.shakespeare-heading {
+  color: var(--home-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.shakespeare-content {
+  color: var(--home-content);
 }
-
-
 
 /* Socrates Color Scheme */
 .socrates-color-scheme {
-  color: var(--socrates-foreground);
-  background: var(--socrates-background);
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
-.enhanced-title {
+.socrates-title {
   color: var(--home-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.socrates-heading {
+  color: var(--home-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.socrates-content {
+  color: var(--home-content);
 }
 
 
 /* Tubman Color Scheme */
 .tubman-color-scheme {
-  color: var(--tubman-foreground);
-  background: var(--tubman-background);
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
-.enhanced-title {
+.tubman-title {
   color: var(--home-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.tubman-heading {
+  color: var(--home-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.tubman-content {
+  color: var(--home-content);
 }
 
 
 /* Youyou Color Scheme */
 .youyou-color-scheme {
-  color: var(--youyou-foreground);
-  background: var(--youyou-background);
+  color: var(--home-foreground);
+  background: var(--home-background);
 }
 
-.enhanced-title {
+.youyou-title {
   color: var(--home-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.youyou-heading {
+  color: var(--home-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.youyou-content {
+  color: var(--home-content);
 }
 
 
@@ -329,23 +323,20 @@ html, body {
   background: var(--swift-background);
 }
 
-.enhanced-title {
-  color: var(--home-title);
+.swift-title {
+  color: var(--swift-title);
 }
 
-.enhanced-heading {
-  color: var(--home-title);
+.swift-heading {
+  color: var(--swift-heading);
 }
 
-.enhanced-content {
-  color: var(--home-title);
+.swift-content {
+  color: var(--swift-content);
 }
 
 
-/*
-* Home Styles
-*/
-
+/* Home Styles */
 
 .home-border-style {
   border: 4px solid var(--home-border-color);
