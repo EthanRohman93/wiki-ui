@@ -46,9 +46,11 @@ const SurveyForm = () => {
       setIsSubmitting(false);
       return;
     }
+    console.log("Username from context:", username);
 
-    console.log('Form Data:', formData); // Log form data to ensure it's being populated correctly
     const dataToSubmit = { ...formData, username };
+    console.log("Data submitted to API:", dataToSubmit);
+
     fetch('http://18.220.173.252/submit-form/', {
       method: 'POST',
       headers: {

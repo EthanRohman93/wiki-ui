@@ -9,7 +9,7 @@ type MyGlobalStateContextType = {
 
 // Create the context with initial default values as undefined (which you'll override when using the provider)
 const MyGlobalStateContext = createContext<MyGlobalStateContextType>({
-  username: '', // default username as empty string
+  username: 'LandingPage', // default username as empty string
   setUsername: () => {} // default setUsername as a no-op function
 });
 
@@ -19,7 +19,7 @@ type MyGlobalStateProviderProps = {
 };
 
 const MyGlobalStateProvider = ({ children }: MyGlobalStateProviderProps) => {
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState<string>('');
 
   // This is the value that will be available to all consuming components
   const value: MyGlobalStateContextType = { username, setUsername };
