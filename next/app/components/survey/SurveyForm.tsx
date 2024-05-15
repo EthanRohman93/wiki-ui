@@ -9,6 +9,10 @@ interface QuestionData {
   name: string;
 }
 
+interface FormDataMap {
+  [key: string]: number;
+}
+
 const SurveyForm = () => {
 const router = useRouter();
     const questions: QuestionData[] = [
@@ -26,7 +30,22 @@ const router = useRouter();
         event.preventDefault();
         setIsSubmitting(true);
         const formData = new FormData(event.currentTarget);
-        const data = Object.fromEntries(formData.entries());
+        const data: FormDataMap = {};
+        let allAnswered = true;
+
+        questions.forEach(question => {
+            const value = formData.get(question.name);
+            if (!value) {
+                allAnswered = false;
+                setError(`Please answer the question: "${question.questionText}"`);
+            }
+            data[question.name] = value ? parseInt(value as string) : 0;
+        });
+
+        if (!allAnswered) {
+            setIsSubmitting(false);
+            return;
+        }
 
         fetch('http://18.220.173.252/submit-form/', {
             method: 'POST',
