@@ -15,6 +15,9 @@ RUN pip install -r requirements.txt
 # Copy project
 COPY . /app/
 
-# Start gunicorn with 0.0.0.0:8000
-CMD ["gunicorn", "server.wsgi:application", "--bind", "0.0.0.0:8000"]
+# Copy and grant execution rights to the startup script
+COPY startup.sh /app/startup.sh
+RUN chmod +x /app/startup.sh
 
+# Start server using the startup script
+CMD ["/app/startup.sh"]
