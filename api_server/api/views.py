@@ -35,8 +35,9 @@ def log_interaction(request):
 def submit_form(request):
     try:
         # Directly map the fields from request.data
+        username = request.data.get('username', '')
         question_data = {key: int(value) for key, value in request.data.items()}
-        feedback = Feedback(**question_data)
+        feedback = Feedback(username=username, **question_data)
         feedback.save()
         return Response({"status": "success", "message": "Feedback submitted successfully."}, status=status.HTTP_201_CREATED)
     except Exception as e:

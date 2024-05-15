@@ -1,6 +1,8 @@
 'use client'
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useContext } from 'react';
 import { useRouter } from 'next/navigation';
+import { MyGlobalStateContext } from '../GlobalState';
+
 
 interface QuestionData {
   questionText: string;
@@ -25,6 +27,8 @@ const SurveyForm = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  const { username } = useContext(MyGlobalStateContext);
+
   const handleRadioChange = (name: string, value: string) => {
     setFormData(prevState => ({
       ...prevState,
@@ -44,13 +48,13 @@ const SurveyForm = () => {
     }
 
     console.log('Form Data:', formData); // Log form data to ensure it's being populated correctly
-
+    const dataToSubmit = { ...formData, username };
     fetch('http://18.220.173.252/submit-form/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(dataToSubmit),
     }).then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');

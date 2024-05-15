@@ -8,7 +8,10 @@ type MyGlobalStateContextType = {
 };
 
 // Create the context with initial default values as undefined (which you'll override when using the provider)
-const MyGlobalStateContext = createContext<MyGlobalStateContextType | undefined>(undefined);
+const MyGlobalStateContext = createContext<MyGlobalStateContextType>({
+  username: '', // default username as empty string
+  setUsername: () => {} // default setUsername as a no-op function
+});
 
 // Define props for the provider
 type MyGlobalStateProviderProps = {

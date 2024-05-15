@@ -7,6 +7,7 @@ User = get_user_model()
 
 
 class Feedback(models.Model):
+    username = models.CharField(max_length=150, blank=True, null=True)
     color_scheme = models.IntegerField()
     layout_organization = models.IntegerField()
     execution_performance = models.IntegerField()
