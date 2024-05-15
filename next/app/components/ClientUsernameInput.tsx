@@ -30,7 +30,7 @@ const ClientUsernameInput = () => {
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}
-                placeholder="SleepyDawg"
+                placeholder="Username..."
                 className="flex-1 justify-center text-input rounded-xl home-input-style"
             />
             <button onClick={handleSubmit} className="flex-1 justify-center rounded-xl home-button-style">
