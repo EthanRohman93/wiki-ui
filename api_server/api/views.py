@@ -34,7 +34,6 @@ def log_interaction(request):
 @permission_classes([AllowAny])
 def submit_form(request):
     try:
-        # Directly map the fields from request.data
         username = request.data.get('username', '')
         question_data = {key: int(value) for key, value in request.data.items() if key != 'username'}
         feedback = Feedback(username=username, **question_data)
