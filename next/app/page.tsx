@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
-import ClientUsernameInput from './components/ClientUsernameInput';
+// import ClientUsernameInput from './components/ClientUsernameInput';
+import Link from 'next/link';
 
 
 const MainPage = () => {
@@ -8,7 +9,7 @@ const MainPage = () => {
       <div className="home-color-scheme flex items-center justify-center min-h-screen">
         <div className='flex flex-col items-center justify-center w-full
                     max-w-4xl p-4 home-border-style rounded-xl'>
-            <h1 className="text-2xl font-bold mb-4">Welcome</h1>
+          <h1 className="text-2xl font-bold mb-4">Welcome! Data Tracking is currently off!</h1>
           <p className="mb-4">
             Hi. Thank you for joining this study! We are eager to see how different designs can improve the way information is presented and experienced.
           </p>
@@ -21,8 +22,15 @@ const MainPage = () => {
           <p>
             Please use any Username you would like! This is only used to separate your interactions from other users.
           </p>
-            <ClientUsernameInput />
-        </div>
+            {/* <ClientUsernameInput /> */}
+          
+          <Link href={'/enhanced-wiki/'}
+            className='text-lg home-heading border-2 rounded-xl p-2 m-2'
+          >Enhanced Wiki with Dynamic Styling</Link>
+          <Link href={'/wiki/'}
+            className='text-lg home-heading border-2 rounded-xl p-2 m-2'
+          >Classic Wiki</Link>
+       </div>
       </div>
   );
 };

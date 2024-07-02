@@ -20,7 +20,7 @@ export default function RootLayout({
         className={inter.className}>
       <body className={inter.className}>
             <MyGlobalStateProvider>
-                <InteractionTracker />
+                {/* <InteractionTracker /> */}
                     {children}
             </MyGlobalStateProvider>
       </body>
